@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "mccourse:pink_garnet_block"
+  },
+  "result": "mccourse:pink_garnet_fence_gate"
+}

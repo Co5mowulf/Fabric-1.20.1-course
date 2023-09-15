@@ -1,0 +1,87 @@
+{
+  "item.mccourse.pink_garnet": "Pink Garnet",
+  "item.mccourse.raw_pink_garnet": "Raw Pink Garnet",
+  "item.mccourse.cauliflower": "Cauliflower",
+  "item.mccourse.cauliflower_seeds": "Cauliflower Seeds",
+  "item.mccourse.peat_brick": "Peat Brick",
+
+  "item.mccourse.metal_detector": "Metal Detector",
+  "item.mccourse.data_tablet": "Data Tablet",
+  "item.mccourse.bar_brawl_music_disc": "§bMusic Disc",
+  "item.mccourse.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+  "item.mccourse.radiation_staff_3d": "Radiation Staff",
+  "item.mccourse.pink_garnet_shield": "Pink Garnet Shield",
+
+  "item.mccourse.pink_garnet_sword": "Pink Garnet Sword",
+  "item.mccourse.pink_garnet_pickaxe": "Pink Garnet Pickaxe",
+  "item.mccourse.pink_garnet_shovel": "Pink Garnet Shovel",
+  "item.mccourse.pink_garnet_axe": "Pink Garnet Axe",
+  "item.mccourse.pink_garnet_hoe": "Pink Garnet Hoe",
+  "item.mccourse.pink_garnet_paxel": "Pink Garnet Paxel",
+  "item.mccourse.pink_garnet_bow": "Pink Garnet Bow",
+
+  "item.mccourse.pink_garnet_helmet": "Pink Garnet Helmet",
+  "item.mccourse.pink_garnet_chestplate": "Pink Garnet Chestplate",
+  "item.mccourse.pink_garnet_leggings": "Pink Garnet Leggings",
+  "item.mccourse.pink_garnet_boots": "Pink Garnet Boots",
+
+  "item.mccourse.pink_garnet_horse_armor": "Pink Garnet Horse Armor",
+
+  "block.mccourse.pink_garnet_block": "Block of Pink Garnet",
+  "block.mccourse.raw_pink_garnet_block": "Block of Raw Pink Garnet",
+
+  "block.mccourse.pink_garnet_ore": "Pink Garnet Ore",
+  "block.mccourse.deepslate_pink_garnet_ore": "Deepslate Pink Garnet Ore",
+  "block.mccourse.nether_pink_garnet_ore": "Nether Pink Garnet Ore",
+  "block.mccourse.end_stone_pink_garnet_ore": "End Stone Pink Garnet Ore",
+
+  "block.mccourse.sound_block": "Sound Block",
+  "block.mccourse.gem_empowering_station": "Gem Empowering Station",
+  "block.mccourse.pink_garnet_lamp_block": "Pink Garnet Lamp",
+  "block.mccourse.petunia": "Petunia",
+  "block.mccourse.glow_moss_block": "Glow Moss Block",
+  "block.mccourse.glow_moss_carpet": "Glow Moss Carpet",
+
+  "block.mccourse.pink_garnet_stairs": "Pink Garnet Stairs",
+  "block.mccourse.pink_garnet_slab": "Pink Garnet Slab",
+  "block.mccourse.pink_garnet_button": "Pink Garnet Button",
+  "block.mccourse.pink_garnet_pressure_plate": "Pink Garnet Pressure Plate",
+  "block.mccourse.pink_garnet_fence": "Pink Garnet Fence",
+  "block.mccourse.pink_garnet_fence_gate": "Pink Garnet Fence Gate",
+  "block.mccourse.pink_garnet_wall": "Pink Garnet Fence Wall",
+  "block.mccourse.pink_garnet_door": "Pink Garnet Door",
+  "block.mccourse.pink_garnet_trapdoor": "Pink Garnet Trapdoor",
+
+  "itemgroup.pink_garnet_group": "Pink Garnet Course Group",
+
+  "enchantment.mccourse.lightning_striker": "Lightning Striker",
+
+  "tooltip.mccourse.metal_detector.tooltip.shift": "Right Click on Blocks to find Valuables!",
+  "tooltip.mccourse.metal_detector.tooltip": "Press §eSHIFT§r for more Information",
+  "tooltip.mccourse.sound_block.tooltip.shift": "Plays a nice sound when Walking on, or being Right-Clicked",
+  "tooltip.mccourse.sound_block.tooltip": "Press §eSHIFT§r for more Information",
+
+  "sounds.mccourse.metal_detector_found_ore" : "Metal Detector Found an Ore",
+
+  "painting.mccourse.world.title": "World",
+  "painting.mccourse.world.author": "NanoAttack",
+  "painting.mccourse.shrimp.title": "Shrimp",
+  "painting.mccourse.shrimp.author": "NanoAttack",
+  "painting.mccourse.saw_them.title": "Saw Them",
+  "painting.mccourse.saw_them.author": "NanoAttack",
+
+  "effect.mccourse.slimy" : "Slimy",
+  "item.minecraft.potion.effect.slimy_potion1": "Potion of Slime",
+  "item.minecraft.splash_potion.effect.slimy_potion1": "Splash Potion of Slime",
+  "item.minecraft.lingering_potion.effect.slimy_potion1": "Lingering Potion of Slime",
+  "item.minecraft.tipped_arrow.effect.slimy_potion1": "Arrow of Slime",
+  "item.minecraft.potion.effect.slimy_potion2": "Potion of Slime",
+  "item.minecraft.splash_potion.effect.slimy_potion2": "Splash Potion of Slime",
+  "item.minecraft.lingering_potion.effect.slimy_potion2": "Lingering Potion of Slime",
+  "item.minecraft.tipped_arrow.effect.slimy_potion2": "Arrow of Slime",
+
+  "entity.minecraft.villager.soundmaster" : "Sound Master",
+
+  "item.mccourse.soap_water_bucket": "Soapy Water Bucket",
+  "item.mccourse.radiation_staff": "Radiation Staff"
+}

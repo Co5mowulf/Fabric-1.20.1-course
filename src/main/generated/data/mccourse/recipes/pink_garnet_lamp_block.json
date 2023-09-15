@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "P": {
+      "item": "minecraft:redstone_lamp"
+    },
+    "S": {
+      "item": "mccourse:pink_garnet"
+    }
+  },
+  "pattern": [
+    " S ",
+    "SPS",
+    " S "
+  ],
+  "result": {
+    "item": "mccourse:pink_garnet_lamp_block"
+  },
+  "show_notification": true
+}
