@@ -23,6 +23,9 @@
 		],
 		"client" : [
 			"net.co5mowulf.mccourse.MCCourseModClient"
+		],
+		"rei_client": [
+			"net.co5mowulf.mccourse.compat.MCCourseModREIClientPlugin"
 		]
 	},
 	"mixins": [
