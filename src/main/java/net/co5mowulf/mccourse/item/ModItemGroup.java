@@ -54,6 +54,7 @@ public class ModItemGroup {
 
                         entries.add(ModBlocks.PETUNIA);
                         entries.add(ModBlocks.GLOW_MOSS_BLOCK);
+                        entries.add(ModBlocks.GLOW_MOSS_CARPET);
 
                         entries.add(ModBlocks.SOUND_BLOCK);
                         entries.add(ModBlocks.PINK_GARNET_LAMP_BLOCK);

@@ -80,6 +80,8 @@ public class ModBlocks {
     //Glow Moss
     public static final Block GLOW_MOSS_BLOCK = registerBlock("glow_moss_block",
             new GlowMossBlock(FabricBlockSettings.copyOf(Blocks.MOSS_BLOCK).luminance(12)));
+    public static final Block GLOW_MOSS_CARPET = registerBlock("glow_moss_carpet",
+            new CarpetBlock(FabricBlockSettings.copyOf(Blocks.MOSS_CARPET).luminance(12)));
 
 
 

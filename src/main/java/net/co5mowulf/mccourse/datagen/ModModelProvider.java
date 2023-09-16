@@ -30,7 +30,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_STONE_PINK_GARNET_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_PINK_GARNET_ORE);
 
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GLOW_MOSS_BLOCK);
+        blockStateModelGenerator.registerWoolAndCarpet(ModBlocks.GLOW_MOSS_BLOCK, ModBlocks.GLOW_MOSS_CARPET);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOUND_BLOCK);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.GEM_EMPOWERING_STATION);
