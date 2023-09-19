@@ -72,7 +72,7 @@ public class GemEmpoweringStationBlockEntity extends BlockEntity implements Exte
         };
     }
 
-    public final SimpleEnergyStorage energyStorage = new SimpleEnergyStorage(6400, 200, 200) {
+    public final SimpleEnergyStorage energyStorage = new SimpleEnergyStorage(64000, 200, 200) {
         @Override
         protected void onFinalCommit() {
             markDirty();
