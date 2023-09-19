@@ -55,6 +55,10 @@ dependencies {
 
 	modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:12.0.652"
 	modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-fabric:12.0.652"
+
+	include modApi('teamreborn:energy:3.0.0') {
+		transitive = false
+	}
 	
 	// Uncomment the following line to enable the deprecated Fabric API modules. 
 	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
