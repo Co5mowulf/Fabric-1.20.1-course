@@ -100,6 +100,18 @@ public class ModBlocks {
             new FlowerPotBlock(DRIFTWOOD_SAPLING, FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING).nonOpaque()));
     public static final Block DRIFTWOOD_PLANKS = registerBlock("driftwood_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(4f)));
+    public static final Block DRIFTWOOD_STAIRS = registerBlock("driftwood_stairs",
+            new StairsBlock(ModBlocks.DRIFTWOOD_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS).strength(4f)));
+    public static final Block DRIFTWOOD_SLAB = registerBlock("driftwood_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB).strength(4f)));
+    public static final Block DRIFTWOOD_BUTTON = registerBlock("driftwood_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON), BlockSetType.OAK, 20, true));
+    public static final Block DRIFTWOOD_PRESSURE_PLATE = registerBlock("driftwood_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK));
+    public static final Block DRIFTWOOD_FENCE = registerBlock("driftwood_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE)));
+    public static final Block DRIFTWOOD_FENCE_GATE = registerBlock("driftwood_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE), WoodType.OAK));
 
     //Glow
     public static final Block GLOW_MOSS_BLOCK = registerBlock("glow_moss_block",

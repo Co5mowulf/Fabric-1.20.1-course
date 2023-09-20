@@ -58,14 +58,6 @@ public class ModItemGroup {
                         entries.add(ModBlocks.ORANGE_GLOW_MUSHROOM_BLOCK);
                         entries.add(ModBlocks.ORANGE_GLOW_MUSHROOM);
 
-                        entries.add(ModBlocks.DRIFTWOOD_LOG);
-                        entries.add(ModBlocks.DRIFTWOOD_WOOD);
-                        entries.add(ModBlocks.STRIPPED_DRIFTWOOD_LOG);
-                        entries.add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD);
-                        entries.add(ModBlocks.DRIFTWOOD_PLANKS);
-                        entries.add(ModBlocks.DRIFTWOOD_SAPLING);
-                        entries.add(ModBlocks.DRIFTWOOD_LEAVES);
-
                         entries.add(ModBlocks.SOUND_BLOCK);
                         entries.add(ModBlocks.PINK_GARNET_LAMP_BLOCK);
                         entries.add(ModBlocks.GEM_EMPOWERING_STATION);
@@ -79,6 +71,20 @@ public class ModItemGroup {
                         entries.add(ModBlocks.PINK_GARNET_WALL);
                         entries.add(ModBlocks.PINK_GARNET_DOOR);
                         entries.add(ModBlocks.PINK_GARNET_TRAPDOOR);
+
+                        entries.add(ModBlocks.DRIFTWOOD_LOG);
+                        entries.add(ModBlocks.DRIFTWOOD_WOOD);
+                        entries.add(ModBlocks.STRIPPED_DRIFTWOOD_LOG);
+                        entries.add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD);
+                        entries.add(ModBlocks.DRIFTWOOD_PLANKS);
+                        entries.add(ModBlocks.DRIFTWOOD_SAPLING);
+                        entries.add(ModBlocks.DRIFTWOOD_LEAVES);
+                        entries.add(ModBlocks.DRIFTWOOD_STAIRS);
+                        entries.add(ModBlocks.DRIFTWOOD_SLAB);
+                        entries.add(ModBlocks.DRIFTWOOD_BUTTON);
+                        entries.add(ModBlocks.DRIFTWOOD_PRESSURE_PLATE);
+                        entries.add(ModBlocks.DRIFTWOOD_FENCE);
+                        entries.add(ModBlocks.DRIFTWOOD_FENCE_GATE);
 
                     }).build());
 

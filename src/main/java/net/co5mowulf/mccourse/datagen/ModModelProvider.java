@@ -53,12 +53,21 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.PETUNIA, ModBlocks.POTTED_PETUNIA, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.ORANGE_GLOW_MUSHROOM, ModBlocks.POTTED_ORANGE_GLOW_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
 
+
+        BlockStateModelGenerator.BlockTexturePool driftwoodPlanksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DRIFTWOOD_PLANKS);
+
         blockStateModelGenerator.registerLog(ModBlocks.DRIFTWOOD_LOG).log(ModBlocks.DRIFTWOOD_LOG).wood(ModBlocks.DRIFTWOOD_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_DRIFTWOOD_LOG).log(ModBlocks.STRIPPED_DRIFTWOOD_LOG).wood(ModBlocks.STRIPPED_DRIFTWOOD_WOOD);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DRIFTWOOD_PLANKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DRIFTWOOD_LEAVES);
 
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.DRIFTWOOD_SAPLING, ModBlocks.POTTED_DRIFTWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        driftwoodPlanksTexturePool.stairs(ModBlocks.DRIFTWOOD_STAIRS);
+        driftwoodPlanksTexturePool.slab(ModBlocks.DRIFTWOOD_SLAB);
+        driftwoodPlanksTexturePool.button(ModBlocks.DRIFTWOOD_BUTTON);
+        driftwoodPlanksTexturePool.pressurePlate(ModBlocks.DRIFTWOOD_PRESSURE_PLATE);
+        driftwoodPlanksTexturePool.fence(ModBlocks.DRIFTWOOD_FENCE);
+        driftwoodPlanksTexturePool.fenceGate(ModBlocks.DRIFTWOOD_FENCE_GATE);
     }
 
     private void registerCustomLamp(BlockStateModelGenerator blockStateModelGenerator) {
