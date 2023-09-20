@@ -13,9 +13,15 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
+import net.minecraft.world.gen.feature.ConfiguredFeature;
+import net.minecraft.world.gen.feature.UndergroundConfiguredFeatures;
+
+import javax.swing.text.html.HTML;
+import java.awt.*;
 
 public class ModBlocks {
 
@@ -84,8 +90,10 @@ public class ModBlocks {
             new CarpetBlock(FabricBlockSettings.copyOf(Blocks.MOSS_CARPET).luminance(12)));
     public static final Block ORANGE_GLOW_MUSHROOM_BLOCK = registerBlock("orange_glow_mushroom_block",
             new MushroomBlock(FabricBlockSettings.copyOf(Blocks.RED_MUSHROOM_BLOCK).luminance(12)));
-
-
+    public static final Block ORANGE_GLOW_MUSHROOM = registerBlock("orange_glow_mushroom",
+            new FlowerBlock(StatusEffects.BAD_OMEN, 4, FabricBlockSettings.copyOf(Blocks.RED_MUSHROOM).nonOpaque().luminance(12)));
+    public static final Block POTTED_ORANGE_GLOW_MUSHROOM = registerBlockWithoutBlockItem("potted_orange_glow_mushroom",
+            new FlowerPotBlock(ORANGE_GLOW_MUSHROOM, FabricBlockSettings.copyOf(Blocks.POTTED_RED_MUSHROOM).nonOpaque().luminance(12)));
 
     //Methods
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
