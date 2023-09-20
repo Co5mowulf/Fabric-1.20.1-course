@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "mccourse:driftwood_stairs",
+    "mccourse:driftwood_slab",
+    "mccourse:driftwood_button",
+    "mccourse:driftwood_pressure_plate",
+    "mccourse:driftwood_fence",
+    "mccourse:driftwood_fence_gate",
+    "mccourse:orange_glow_mushroom_block"
+  ]
+}
