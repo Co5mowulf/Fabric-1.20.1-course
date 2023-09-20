@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mccourse:block/driftwood_slab"
+    },
+    "type=double": {
+      "model": "mccourse:block/driftwood_planks"
+    },
+    "type=top": {
+      "model": "mccourse:block/driftwood_slab_top"
+    }
+  }
+}
