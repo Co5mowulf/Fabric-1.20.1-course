@@ -1,4 +1,4 @@
-// 1.20.1	2023-09-19T21:15:54.2327732	MC Course Mod/Tags for minecraft:block
+// 1.20.1	2023-09-20T16:28:01.5395205	MC Course Mod/Tags for minecraft:block
 ac7381ec75628ff455e4e862ac61c12577e71c8f data\fabric\tags\blocks\needs_tool_level_5.json
 b3bd1d783e30fc072c1a62aa9c3bcfac91fe812c data\minecraft\tags\blocks\doors.json
 bbf6ed983473553c42e457780ba9959a3d4a3d58 data\mccourse\tags\blocks\metal_detector_detectable_blocks.json
@@ -6,6 +6,7 @@ cac54469142d24a8401f95e0fb8d26528f2f0f9d data\minecraft\tags\blocks\needs_iron_t
 aca4b193d86493c418e8590337b179e5ad60d85a data\minecraft\tags\blocks\trapdoors.json
 a5d38c4dcc4756ccd3c98999787fd9edcf60457d data\minecraft\tags\blocks\crops.json
 205f915cdb9b4dc520cf5afeb65db250d13748ba data\minecraft\tags\blocks\mineable\pickaxe.json
+112cbf07d30ac5ce78f9460c0e0d3d0417c62640 data\minecraft\tags\blocks\logs_that_burn.json
 e7d20e1649c9935aff53b4e689a343ef2fd40704 data\minecraft\tags\blocks\needs_diamond_tool.json
 6a88c0cba47ebc2af508186674c0f7efb59a3e10 data\minecraft\tags\blocks\flowers.json
 03ee821265d83284e4cd34a4b2c9075b49ed2a6a data\fabric\tags\blocks\needs_tool_level_4.json

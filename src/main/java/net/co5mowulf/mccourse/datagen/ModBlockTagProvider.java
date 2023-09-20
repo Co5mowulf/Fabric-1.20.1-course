@@ -104,5 +104,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         //moss
         getOrCreateTagBuilder(BlockTags.DIRT)
                 .add(ModBlocks.GLOW_MOSS_BLOCK);
+
+        //Burning Wood
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.DRIFTWOOD_LOG, ModBlocks.DRIFTWOOD_WOOD, ModBlocks.STRIPPED_DRIFTWOOD_LOG, ModBlocks.STRIPPED_DRIFTWOOD_WOOD);
     }
 }
