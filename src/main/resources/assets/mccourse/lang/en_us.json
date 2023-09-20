@@ -42,6 +42,7 @@
   "block.mccourse.glow_moss_block": "Glow Moss Block",
   "block.mccourse.glow_moss_carpet": "Glow Moss Carpet",
   "block.mccourse.orange_glow_mushroom_block": "Orange Glow Mushroom Block",
+  "block.mccourse.orange_glow_mushroom": "Orange Glow Mushroom",
 
   "block.mccourse.pink_garnet_stairs": "Pink Garnet Stairs",
   "block.mccourse.pink_garnet_slab": "Pink Garnet Slab",
@@ -84,5 +85,8 @@
   "entity.minecraft.villager.soundmaster" : "Sound Master",
 
   "item.mccourse.soap_water_bucket": "Soapy Water Bucket",
-  "item.mccourse.radiation_staff": "Radiation Staff"
+  "item.mccourse.radiation_staff": "Radiation Staff",
+
+  "mccourse.tooltip.liquid.amount.with.capacity": "%s / %s mB",
+  "mccourse.tooltip.liquid.amount": "%s mB"
 }
