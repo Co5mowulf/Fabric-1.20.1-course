@@ -85,25 +85,25 @@ public class ModBlocks {
 
     //Wood
     public static final Block DRIFTWOOD_LOG = registerBlock("driftwood_log",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(4f)));
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)));
     public static final Block DRIFTWOOD_WOOD = registerBlock("driftwood_wood",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).strength(4f)));
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD)));
     public static final Block STRIPPED_DRIFTWOOD_LOG = registerBlock("stripped_driftwood_log",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(4f)));
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG)));
     public static final Block STRIPPED_DRIFTWOOD_WOOD = registerBlock("stripped_driftwood_wood",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4f)));
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD)));
     public static final Block DRIFTWOOD_LEAVES = registerBlock("driftwood_leaves",
-            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(1f)));
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
     public static final Block DRIFTWOOD_SAPLING = registerBlock("driftwood_sapling",
-            new SaplingBlock(null, FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(1f)));
+            new SaplingBlock(null, FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
     public static final Block POTTED_DRIFTWOOD_SAPLING = registerBlockWithoutBlockItem("potted_driftwood_sapling",
             new FlowerPotBlock(DRIFTWOOD_SAPLING, FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING).nonOpaque()));
     public static final Block DRIFTWOOD_PLANKS = registerBlock("driftwood_planks",
-            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(4f)));
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
     public static final Block DRIFTWOOD_STAIRS = registerBlock("driftwood_stairs",
-            new StairsBlock(ModBlocks.DRIFTWOOD_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS).strength(4f)));
+            new StairsBlock(ModBlocks.DRIFTWOOD_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS)));
     public static final Block DRIFTWOOD_SLAB = registerBlock("driftwood_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB).strength(4f)));
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB)));
     public static final Block DRIFTWOOD_BUTTON = registerBlock("driftwood_button",
             new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON), BlockSetType.OAK, 20, true));
     public static final Block DRIFTWOOD_PRESSURE_PLATE = registerBlock("driftwood_pressure_plate",

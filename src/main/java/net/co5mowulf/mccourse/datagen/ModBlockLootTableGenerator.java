@@ -1,5 +1,6 @@
 package net.co5mowulf.mccourse.datagen;
 
+import dev.architectury.platform.Mod;
 import net.co5mowulf.mccourse.block.custom.CauliflowerCropBlock;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
@@ -7,6 +8,7 @@ import net.co5mowulf.mccourse.block.ModBlocks;
 import net.co5mowulf.mccourse.item.ModItems;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.CropBlock;
+import net.minecraft.block.MushroomBlock;
 import net.minecraft.item.Items;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.loot.condition.LootCondition;
@@ -29,6 +31,25 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.PINK_GARNET_WALL);
         addDrop(ModBlocks.PINK_GARNET_DOOR, doorDrops(ModBlocks.PINK_GARNET_DOOR));
         addDrop(ModBlocks.PINK_GARNET_TRAPDOOR);
+
+        addDrop(ModBlocks.DRIFTWOOD_LOG);
+        addDrop(ModBlocks.DRIFTWOOD_WOOD);
+        addDrop(ModBlocks.STRIPPED_DRIFTWOOD_LOG);
+        addDrop(ModBlocks.STRIPPED_DRIFTWOOD_WOOD);
+        addDrop(ModBlocks.DRIFTWOOD_PLANKS);
+        addDrop(ModBlocks.DRIFTWOOD_STAIRS);
+        addDrop(ModBlocks.DRIFTWOOD_SLAB);
+        addDrop(ModBlocks.DRIFTWOOD_BUTTON);
+        addDrop(ModBlocks.DRIFTWOOD_PRESSURE_PLATE);
+        addDrop(ModBlocks.DRIFTWOOD_FENCE);
+        addDrop(ModBlocks.DRIFTWOOD_FENCE_GATE);
+        addDrop(ModBlocks.GLOW_MOSS_BLOCK);
+        addDrop(ModBlocks.GLOW_MOSS_CARPET);
+        addDrop(ModBlocks.ORANGE_GLOW_MUSHROOM);
+        addDrop(ModBlocks.DRIFTWOOD_SAPLING);
+
+        addDrop(ModBlocks.ORANGE_GLOW_MUSHROOM_BLOCK, mushroomBlockDrops(ModBlocks.ORANGE_GLOW_MUSHROOM_BLOCK, ModBlocks.ORANGE_GLOW_MUSHROOM));
+        addDrop(ModBlocks.DRIFTWOOD_LEAVES, leavesDrops(ModBlocks.DRIFTWOOD_LEAVES, ModBlocks.DRIFTWOOD_LEAVES));
 
         addDrop(ModBlocks.PINK_GARNET_ORE, oreDrops(ModBlocks.PINK_GARNET_ORE, ModItems.RAW_PINK_GARNET));
         addDrop(ModBlocks.DEEPSLATE_PINK_GARNET_ORE, oreDrops(ModBlocks.DEEPSLATE_PINK_GARNET_ORE, ModItems.RAW_PINK_GARNET));

@@ -150,6 +150,42 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PINK_GARNET_LAMP_BLOCK)));
 
+        //Driftwood
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DRIFTWOOD_STAIRS, 4)
+                .pattern("#  ")
+                .pattern("## ")
+                .pattern("###")
+                .input('#', ModBlocks.DRIFTWOOD_PLANKS)
+                .criterion(hasItem(ModBlocks.DRIFTWOOD_PLANKS), conditionsFromItem(ModBlocks.DRIFTWOOD_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.DRIFTWOOD_STAIRS)));
+
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DRIFTWOOD_SLAB, ModBlocks.DRIFTWOOD_PLANKS);
+        offerShapelessRecipe(exporter, ModBlocks.DRIFTWOOD_BUTTON, ModBlocks.DRIFTWOOD_PLANKS, "driftwood_planks", 1);
+        offerPressurePlateRecipe(exporter, ModBlocks.DRIFTWOOD_PRESSURE_PLATE, ModBlocks.DRIFTWOOD_PLANKS);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DRIFTWOOD_FENCE, 3)
+                .pattern("   ")
+                .pattern("SPS")
+                .pattern("SPS")
+                .input('S', ModBlocks.DRIFTWOOD_PLANKS)
+                .input('P', Items.STICK)
+                .criterion(hasItem(ModBlocks.DRIFTWOOD_PLANKS), conditionsFromItem(ModBlocks.DRIFTWOOD_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.DRIFTWOOD_FENCE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DRIFTWOOD_FENCE_GATE, 1)
+                .pattern("   ")
+                .pattern("SPS")
+                .pattern("SPS")
+                .input('P', ModBlocks.DRIFTWOOD_PLANKS)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModBlocks.DRIFTWOOD_PLANKS), conditionsFromItem(ModBlocks.DRIFTWOOD_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.DRIFTWOOD_FENCE_GATE)));
+
+        offerShapelessRecipe(exporter, ModBlocks.DRIFTWOOD_PLANKS, ModBlocks.DRIFTWOOD_LOG, "driftwood_planks", 4);
+        offerShapelessRecipe(exporter, ModBlocks.DRIFTWOOD_PLANKS, ModBlocks.DRIFTWOOD_WOOD, "driftwood_planks", 4);
+        offerShapelessRecipe(exporter, ModBlocks.DRIFTWOOD_PLANKS, ModBlocks.STRIPPED_DRIFTWOOD_LOG, "driftwood_planks", 4);
+        offerShapelessRecipe(exporter, ModBlocks.DRIFTWOOD_PLANKS, ModBlocks.STRIPPED_DRIFTWOOD_WOOD, "driftwood_planks", 4);
+
         offerSmelting(exporter, List.of(ModItems.RAW_PINK_GARNET, ModBlocks.PINK_GARNET_ORE, ModBlocks.DEEPSLATE_PINK_GARNET_ORE,
                         ModBlocks.NETHER_PINK_GARNET_ORE, ModBlocks.END_STONE_PINK_GARNET_ORE), RecipeCategory.MISC, ModItems.PINK_GARNET,
                 0.25f, 200, "pink_garnet");

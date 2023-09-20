@@ -1,5 +1,6 @@
 package net.co5mowulf.mccourse.datagen;
 
+import dev.architectury.platform.Mod;
 import net.co5mowulf.mccourse.block.custom.SoundBlock;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
@@ -85,6 +86,18 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.TRAPDOORS)
                 .add(ModBlocks.PINK_GARNET_TRAPDOOR);
+
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(ModBlocks.DRIFTWOOD_STAIRS,
+                        ModBlocks.DRIFTWOOD_SLAB,
+                        ModBlocks.DRIFTWOOD_BUTTON,
+                        ModBlocks.DRIFTWOOD_PRESSURE_PLATE,
+                        ModBlocks.DRIFTWOOD_FENCE,
+                        ModBlocks.DRIFTWOOD_FENCE_GATE,
+                        ModBlocks.ORANGE_GLOW_MUSHROOM_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
+                .add(ModBlocks.DRIFTWOOD_LEAVES);
 
         //Tag for netherite
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")))
