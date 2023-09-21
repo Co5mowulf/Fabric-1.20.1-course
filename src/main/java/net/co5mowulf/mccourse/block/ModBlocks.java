@@ -3,6 +3,7 @@ package net.co5mowulf.mccourse.block;
 import net.co5mowulf.mccourse.block.custom.*;
 import net.co5mowulf.mccourse.sound.ModSounds;
 import net.co5mowulf.mccourse.util.ModWoodTypes;
+import net.co5mowulf.mccourse.world.tree.DriftwoodSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.co5mowulf.mccourse.MCCourseMod;
@@ -96,7 +97,7 @@ public class ModBlocks {
     public static final Block DRIFTWOOD_LEAVES = registerBlock("driftwood_leaves",
             new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
     public static final Block DRIFTWOOD_SAPLING = registerBlock("driftwood_sapling",
-            new SaplingBlock(null, FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+            new SaplingBlock(new DriftwoodSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
     public static final Block POTTED_DRIFTWOOD_SAPLING = registerBlockWithoutBlockItem("potted_driftwood_sapling",
             new FlowerPotBlock(DRIFTWOOD_SAPLING, FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING).nonOpaque()));
     public static final Block DRIFTWOOD_PLANKS = registerBlock("driftwood_planks",

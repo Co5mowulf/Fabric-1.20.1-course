@@ -1,4 +1,4 @@
-// 1.20.1	2023-09-20T21:21:46.1941265	MC Course Mod/Block Loot Tables
+// 1.20.1	2023-09-20T22:16:13.7951896	MC Course Mod/Block Loot Tables
 7843a3c48f30392d6956f1b77aa59b291d769731 data\mccourse\loot_tables\blocks\pink_garnet_stairs.json
 2219c9e49518a68a9fe84c708a5afa3676cbf982 data\mccourse\loot_tables\blocks\sound_block.json
 db9b7ba7f4993f58e55b0b14b7b14e325f03d137 data\mccourse\loot_tables\blocks\pink_garnet_button.json
@@ -15,8 +15,8 @@ d7d4100b1e57b3372aa974ffa1bb34ae8a10ff02 data\mccourse\loot_tables\blocks\driftw
 3f83f648be6dacb4d842ce448f7b17cb50b162ed data\mccourse\loot_tables\blocks\glow_moss_carpet.json
 d0e11be061218f4535a7c3e72b9ee9b54c7e3a34 data\mccourse\loot_tables\blocks\driftwood_fence_gate.json
 bd432dfab5ccc71fe8ff914648033c4ea86a1576 data\mccourse\loot_tables\blocks\pink_garnet_block.json
-51688546a79588a2c21e2fa362851e825a6de49f data\mccourse\loot_tables\blocks\driftwood_button.json
 e5e5318d827b387529c6b0ad855483a0ba870d1f data\mccourse\loot_tables\blocks\driftwood_wood.json
+51688546a79588a2c21e2fa362851e825a6de49f data\mccourse\loot_tables\blocks\driftwood_button.json
 e7e925176ecd76106aa2d5c8c176748962f12b61 data\mccourse\loot_tables\blocks\orange_glow_mushroom.json
 072d1a99d8705ea81eeb443ba4f28fc47c5f7baf data\mccourse\loot_tables\blocks\driftwood_planks.json
 e061188b49c3ecac5a41445d689a3ec3fa8595ae data\mccourse\loot_tables\blocks\pink_garnet_pressure_plate.json
@@ -32,7 +32,6 @@ b3c77a3b71b18920b7ddd7373aec394fa3401084 data\mccourse\loot_tables\blocks\pink_g
 dd66015006fddb8c3895257caee64be58bb49856 data\mccourse\loot_tables\blocks\glow_moss_block.json
 63605ee2f70f98e3b03dc835c789d37cb01ce218 data\mccourse\loot_tables\blocks\driftwood_fence.json
 cd05e1b89c3cd7deaa18e5d184e8a7938f5ac767 data\mccourse\loot_tables\blocks\driftwood_hanging_sign.json
-139a9baee435f483f7838876508c819c6796a697 data\mccourse\loot_tables\blocks\driftwood_leaves.json
 ad971cccc3bca932f642e1d67a8510221188d86a data\mccourse\loot_tables\blocks\driftwood_slab.json
 dc482dcc4f5cbc24a3668a70c282bd166353a616 data\mccourse\loot_tables\blocks\pink_garnet_trapdoor.json
 31209905164137607f90c802cb7f8a0db8c8d800 data\mccourse\loot_tables\blocks\stripped_driftwood_wood.json

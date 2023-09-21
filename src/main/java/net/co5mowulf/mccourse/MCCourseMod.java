@@ -1,6 +1,7 @@
 package net.co5mowulf.mccourse;
 
 import net.co5mowulf.mccourse.recipe.ModRecipes;
+import net.co5mowulf.mccourse.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.co5mowulf.mccourse.block.ModBlocks;
@@ -51,5 +52,6 @@ public class MCCourseMod implements ModInitializer {
 		ModScreenHandlers.registerScreenHandler();
 
 		ModRecipes.registerRecipes();
+		ModWorldGeneration.generateModWorldGeneration();
 	}
 }
