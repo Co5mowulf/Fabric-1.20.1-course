@@ -1,5 +1,6 @@
 package net.co5mowulf.mccourse;
 
+import net.co5mowulf.mccourse.datagen.ModWorldGenerator;
 import net.co5mowulf.mccourse.world.ModConfiguredFeatures;
 import net.co5mowulf.mccourse.world.ModPlacedFeatures;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
