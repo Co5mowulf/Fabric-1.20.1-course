@@ -12,7 +12,6 @@ import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.UndergroundConfiguredFeatures;
 
 public class GlowMossBlock extends Block implements Fertilizable {
 
