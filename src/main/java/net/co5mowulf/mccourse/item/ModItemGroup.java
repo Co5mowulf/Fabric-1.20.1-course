@@ -85,6 +85,8 @@ public class ModItemGroup {
                         entries.add(ModBlocks.DRIFTWOOD_PRESSURE_PLATE);
                         entries.add(ModBlocks.DRIFTWOOD_FENCE);
                         entries.add(ModBlocks.DRIFTWOOD_FENCE_GATE);
+                        entries.add(ModItems.DRIFTWOOD_SIGN);
+                        entries.add(ModItems.DRIFTWOOD_HANGING_SIGN);
 
                     }).build());
 

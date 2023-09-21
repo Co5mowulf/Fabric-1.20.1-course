@@ -2,6 +2,7 @@ package net.co5mowulf.mccourse.block;
 
 import net.co5mowulf.mccourse.block.custom.*;
 import net.co5mowulf.mccourse.sound.ModSounds;
+import net.co5mowulf.mccourse.util.ModWoodTypes;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.co5mowulf.mccourse.MCCourseMod;
@@ -111,7 +112,15 @@ public class ModBlocks {
     public static final Block DRIFTWOOD_FENCE = registerBlock("driftwood_fence",
             new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE)));
     public static final Block DRIFTWOOD_FENCE_GATE = registerBlock("driftwood_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE), WoodType.OAK));
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE), ModWoodTypes.DRIFTWOOD));
+    public static final Block DRIFTWOOD_SIGN = registerBlockWithoutBlockItem("driftwood_sign",
+            new ModStandingSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_SIGN), ModWoodTypes.DRIFTWOOD));
+    public static final Block DRIFTWOOD_WALL_SIGN = registerBlockWithoutBlockItem("driftwood_wall_sign",
+            new ModWallSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_WALL_SIGN), ModWoodTypes.DRIFTWOOD));
+    public static final Block DRIFTWOOD_HANGING_SIGN = registerBlockWithoutBlockItem("driftwood_hanging_sign",
+            new ModHangingSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_HANGING_SIGN), ModWoodTypes.DRIFTWOOD));
+    public static final Block DRIFTWOOD_HANGING_WALL_SIGN = registerBlockWithoutBlockItem("driftwood_hanging_wall_sign",
+            new ModWallHangingSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.DRIFTWOOD));
 
     //Glow
     public static final Block GLOW_MOSS_BLOCK = registerBlock("glow_moss_block",

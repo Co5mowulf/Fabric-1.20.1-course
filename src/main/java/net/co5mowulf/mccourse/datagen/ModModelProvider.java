@@ -12,6 +12,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.MossBlock;
 import net.minecraft.data.client.*;
+import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 
@@ -68,6 +69,9 @@ public class ModModelProvider extends FabricModelProvider {
         driftwoodPlanksTexturePool.pressurePlate(ModBlocks.DRIFTWOOD_PRESSURE_PLATE);
         driftwoodPlanksTexturePool.fence(ModBlocks.DRIFTWOOD_FENCE);
         driftwoodPlanksTexturePool.fenceGate(ModBlocks.DRIFTWOOD_FENCE_GATE);
+        driftwoodPlanksTexturePool.family(BlockFamilies.register(ModBlocks.DRIFTWOOD_PLANKS).sign(ModBlocks.DRIFTWOOD_SIGN, ModBlocks.DRIFTWOOD_WALL_SIGN).build());
+        blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_DRIFTWOOD_LOG, ModBlocks.DRIFTWOOD_HANGING_SIGN, ModBlocks.DRIFTWOOD_HANGING_WALL_SIGN);
+
     }
 
     private void registerCustomLamp(BlockStateModelGenerator blockStateModelGenerator) {
