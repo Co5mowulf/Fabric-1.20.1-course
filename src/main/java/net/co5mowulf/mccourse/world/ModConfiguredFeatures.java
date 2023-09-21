@@ -4,7 +4,6 @@ import net.co5mowulf.mccourse.MCCourseMod;
 import net.co5mowulf.mccourse.block.ModBlocks;
 import net.minecraft.block.Blocks;;
 import net.minecraft.registry.Registerable;
-import net.minecraft.registry.RegistryEntryLookup;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.BlockTags;
@@ -12,16 +11,24 @@ import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;;
+import net.minecraft.util.collection.DataPool;
+import net.minecraft.util.math.VerticalSurfaceType;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.util.math.intprovider.IntProvider;
+import net.minecraft.util.math.intprovider.IntProviderType;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.SpruceFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.stateprovider.WeightedBlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 import java.util.List;
 
 public class ModConfiguredFeatures {
+
     public static final RegistryKey<ConfiguredFeature<?, ?>> DRIFTWOOD_KEY = registerKey("driftwood");
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> PINK_GARNET_ORE_KEY = registerKey("pink_garnet_ore");
@@ -32,15 +39,12 @@ public class ModConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> GLOW_MUSHROOM_KEY = registerKey("glow_mushroom");
 
-    public static final RegistryKey<ConfiguredFeature<?, ?>> GLOW_MOSS_BONEMEAL_KEY = registerKey("glow_moss_bonemeal");
-
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
 
         RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplaceables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
         RuleTest netherReplaceables = new TagMatchRuleTest(BlockTags.BASE_STONE_NETHER);
         RuleTest endReplaceables = new BlockMatchRuleTest(Blocks.END_STONE);
-        RuleTest mossReplacables = new TagMatchRuleTest(BlockTags.MOSS_REPLACEABLE);
 
         List<OreFeatureConfig.Target> overworldPinkGarnetOres =
                 List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.PINK_GARNET_ORE.getDefaultState()),
@@ -70,7 +74,6 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(ModBlocks.ORANGE_GLOW_MUSHROOM_BLOCK),
                 BlockStateProvider.of(Blocks.MUSHROOM_STEM),
                 2));
-
     }
 
 

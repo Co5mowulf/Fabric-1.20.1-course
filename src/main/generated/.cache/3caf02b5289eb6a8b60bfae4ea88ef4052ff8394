@@ -1,4 +1,4 @@
-// 1.20.1	2023-09-21T10:12:26.3735911	MC Course Mod/Block Loot Tables
+// 1.20.1	2023-09-21T10:51:01.3691507	MC Course Mod/Block Loot Tables
 7843a3c48f30392d6956f1b77aa59b291d769731 data\mccourse\loot_tables\blocks\pink_garnet_stairs.json
 2219c9e49518a68a9fe84c708a5afa3676cbf982 data\mccourse\loot_tables\blocks\sound_block.json
 db9b7ba7f4993f58e55b0b14b7b14e325f03d137 data\mccourse\loot_tables\blocks\pink_garnet_button.json
@@ -15,8 +15,8 @@ d7d4100b1e57b3372aa974ffa1bb34ae8a10ff02 data\mccourse\loot_tables\blocks\driftw
 3f83f648be6dacb4d842ce448f7b17cb50b162ed data\mccourse\loot_tables\blocks\glow_moss_carpet.json
 d0e11be061218f4535a7c3e72b9ee9b54c7e3a34 data\mccourse\loot_tables\blocks\driftwood_fence_gate.json
 bd432dfab5ccc71fe8ff914648033c4ea86a1576 data\mccourse\loot_tables\blocks\pink_garnet_block.json
-51688546a79588a2c21e2fa362851e825a6de49f data\mccourse\loot_tables\blocks\driftwood_button.json
 e5e5318d827b387529c6b0ad855483a0ba870d1f data\mccourse\loot_tables\blocks\driftwood_wood.json
+51688546a79588a2c21e2fa362851e825a6de49f data\mccourse\loot_tables\blocks\driftwood_button.json
 e7e925176ecd76106aa2d5c8c176748962f12b61 data\mccourse\loot_tables\blocks\orange_glow_mushroom.json
 072d1a99d8705ea81eeb443ba4f28fc47c5f7baf data\mccourse\loot_tables\blocks\driftwood_planks.json
 e061188b49c3ecac5a41445d689a3ec3fa8595ae data\mccourse\loot_tables\blocks\pink_garnet_pressure_plate.json
