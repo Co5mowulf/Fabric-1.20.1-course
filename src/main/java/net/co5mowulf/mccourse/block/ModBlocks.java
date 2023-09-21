@@ -4,6 +4,7 @@ import net.co5mowulf.mccourse.block.custom.*;
 import net.co5mowulf.mccourse.sound.ModSounds;
 import net.co5mowulf.mccourse.util.ModWoodTypes;
 import net.co5mowulf.mccourse.world.tree.DriftwoodSaplingGenerator;
+import net.co5mowulf.mccourse.world.tree.OrangeGlowMushroomSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.co5mowulf.mccourse.MCCourseMod;
@@ -131,7 +132,7 @@ public class ModBlocks {
     public static final Block ORANGE_GLOW_MUSHROOM_BLOCK = registerBlock("orange_glow_mushroom_block",
             new MushroomBlock(FabricBlockSettings.copyOf(Blocks.RED_MUSHROOM_BLOCK).luminance(12)));
     public static final Block ORANGE_GLOW_MUSHROOM = registerBlock("orange_glow_mushroom",
-            new FlowerBlock(StatusEffects.BAD_OMEN, 4, FabricBlockSettings.copyOf(Blocks.RED_MUSHROOM).nonOpaque().luminance(12)));
+            new SaplingBlock(new OrangeGlowMushroomSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.RED_MUSHROOM).luminance(12).nonOpaque()));
     public static final Block POTTED_ORANGE_GLOW_MUSHROOM = registerBlockWithoutBlockItem("potted_orange_glow_mushroom",
             new FlowerPotBlock(ORANGE_GLOW_MUSHROOM, FabricBlockSettings.copyOf(Blocks.POTTED_RED_MUSHROOM).nonOpaque().luminance(12)));
 
