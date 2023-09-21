@@ -39,6 +39,8 @@ public class ModConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> GLOW_MUSHROOM_KEY = registerKey("glow_mushroom");
 
+    public static final RegistryKey<ConfiguredFeature<?, ?>> GLOW_MOSS_BONEMEAL_KEY = registerKey("glow_moss_bonemeal");
+
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
 
         RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -74,6 +76,20 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(ModBlocks.ORANGE_GLOW_MUSHROOM_BLOCK),
                 BlockStateProvider.of(Blocks.MUSHROOM_STEM),
                 2));
+
+        register(context, GLOW_MOSS_BONEMEAL_KEY, Feature.VEGETATION_PATCH, new VegetationPatchFeatureConfig(
+                BlockTags.MOSS_REPLACEABLE,
+                BlockStateProvider.of(ModBlocks.GLOW_MOSS_BLOCK),
+                PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.GLOW_MOSS_CARPET))),
+                VerticalSurfaceType.FLOOR,
+                ConstantIntProvider.create(1),
+                0.0f,
+                5,
+                0.6f,
+                UniformIntProvider.create(1,2),
+                0.75f
+        ));
     }
 
 
