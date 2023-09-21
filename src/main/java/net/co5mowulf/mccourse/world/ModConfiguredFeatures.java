@@ -33,7 +33,7 @@ public class ModConfiguredFeatures {
         register(context, GLOW_MUSHROOM_KEY, Feature.HUGE_RED_MUSHROOM, new HugeMushroomFeatureConfig(
                 BlockStateProvider.of(ModBlocks.ORANGE_GLOW_MUSHROOM_BLOCK),
                 BlockStateProvider.of(Blocks.MUSHROOM_STEM),
-                3));
+                2));
     }
 
 

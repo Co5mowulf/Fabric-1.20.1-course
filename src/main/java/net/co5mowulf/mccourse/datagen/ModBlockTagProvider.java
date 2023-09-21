@@ -101,7 +101,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.DRIFTWOOD_HANGING_WALL_SIGN);
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
-                .add(ModBlocks.DRIFTWOOD_LEAVES);
+                .add(ModBlocks.DRIFTWOOD_LEAVES,
+                        ModBlocks.GLOW_MOSS_BLOCK);
 
         //Tag for netherite
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")))
@@ -130,6 +131,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         //moss
         getOrCreateTagBuilder(BlockTags.DIRT)
+                .add(ModBlocks.GLOW_MOSS_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.MUSHROOM_GROW_BLOCK)
                 .add(ModBlocks.GLOW_MOSS_BLOCK);
 
         //Burning Wood

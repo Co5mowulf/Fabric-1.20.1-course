@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "mccourse:driftwood_leaves"
+    "mccourse:driftwood_leaves",
+    "mccourse:glow_moss_block"
   ]
 }
