@@ -94,7 +94,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.DRIFTWOOD_PRESSURE_PLATE,
                         ModBlocks.DRIFTWOOD_FENCE,
                         ModBlocks.DRIFTWOOD_FENCE_GATE,
-                        ModBlocks.ORANGE_GLOW_MUSHROOM_BLOCK);
+                        ModBlocks.ORANGE_GLOW_MUSHROOM_BLOCK,
+                        ModBlocks.DRIFTWOOD_SIGN,
+                        ModBlocks.DRIFTWOOD_WALL_SIGN,
+                        ModBlocks.DRIFTWOOD_HANGING_SIGN,
+                        ModBlocks.DRIFTWOOD_HANGING_WALL_SIGN);
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                 .add(ModBlocks.DRIFTWOOD_LEAVES);

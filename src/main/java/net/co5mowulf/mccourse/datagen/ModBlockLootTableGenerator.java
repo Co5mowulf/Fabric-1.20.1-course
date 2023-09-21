@@ -48,6 +48,11 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.ORANGE_GLOW_MUSHROOM);
         addDrop(ModBlocks.DRIFTWOOD_SAPLING);
 
+        addDrop(ModBlocks.DRIFTWOOD_SIGN, ModItems.DRIFTWOOD_SIGN);
+        addDrop(ModBlocks.DRIFTWOOD_WALL_SIGN, ModItems.DRIFTWOOD_SIGN);
+        addDrop(ModBlocks.DRIFTWOOD_HANGING_SIGN, ModItems.DRIFTWOOD_HANGING_SIGN);
+        addDrop(ModBlocks.DRIFTWOOD_HANGING_WALL_SIGN, ModItems.DRIFTWOOD_HANGING_SIGN);
+
         addDrop(ModBlocks.ORANGE_GLOW_MUSHROOM_BLOCK, mushroomBlockDrops(ModBlocks.ORANGE_GLOW_MUSHROOM_BLOCK, ModBlocks.ORANGE_GLOW_MUSHROOM));
         addDrop(ModBlocks.DRIFTWOOD_LEAVES, leavesDrops(ModBlocks.DRIFTWOOD_LEAVES, ModBlocks.DRIFTWOOD_LEAVES));
 

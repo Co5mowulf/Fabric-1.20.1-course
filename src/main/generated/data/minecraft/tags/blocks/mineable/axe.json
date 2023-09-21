@@ -7,6 +7,10 @@
     "mccourse:driftwood_pressure_plate",
     "mccourse:driftwood_fence",
     "mccourse:driftwood_fence_gate",
-    "mccourse:orange_glow_mushroom_block"
+    "mccourse:orange_glow_mushroom_block",
+    "mccourse:driftwood_sign",
+    "mccourse:driftwood_wall_sign",
+    "mccourse:driftwood_hanging_sign",
+    "mccourse:driftwood_hanging_wall_sign"
   ]
 }

@@ -1,8 +1,8 @@
-// 1.20.1	2023-09-20T20:06:31.3447552	MC Course Mod/Tags for minecraft:block
+// 1.20.1	2023-09-20T20:17:10.3479919	MC Course Mod/Tags for minecraft:block
 ac7381ec75628ff455e4e862ac61c12577e71c8f data\fabric\tags\blocks\needs_tool_level_5.json
 b3bd1d783e30fc072c1a62aa9c3bcfac91fe812c data\minecraft\tags\blocks\doors.json
 5502eef4d79b33bd42c675c7fabb500027c42b76 data\minecraft\tags\blocks\mineable\hoe.json
-6970ef98fd813624e9568520d8a491e31d1c98d7 data\minecraft\tags\blocks\mineable\axe.json
+0aa3b30fe74db3ac0e887e749b662d21f6f7788c data\minecraft\tags\blocks\mineable\axe.json
 bbf6ed983473553c42e457780ba9959a3d4a3d58 data\mccourse\tags\blocks\metal_detector_detectable_blocks.json
 cac54469142d24a8401f95e0fb8d26528f2f0f9d data\minecraft\tags\blocks\needs_iron_tool.json
 aca4b193d86493c418e8590337b179e5ad60d85a data\minecraft\tags\blocks\trapdoors.json
