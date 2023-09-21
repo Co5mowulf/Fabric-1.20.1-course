@@ -186,6 +186,24 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerShapelessRecipe(exporter, ModBlocks.DRIFTWOOD_PLANKS, ModBlocks.STRIPPED_DRIFTWOOD_LOG, "driftwood_planks", 4);
         offerShapelessRecipe(exporter, ModBlocks.DRIFTWOOD_PLANKS, ModBlocks.STRIPPED_DRIFTWOOD_WOOD, "driftwood_planks", 4);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModItems.DRIFTWOOD_SIGN, 3)
+                .pattern("PPP")
+                .pattern("PPP")
+                .pattern(" S ")
+                .input('P', ModBlocks.DRIFTWOOD_PLANKS)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModBlocks.DRIFTWOOD_PLANKS), conditionsFromItem(ModBlocks.DRIFTWOOD_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.DRIFTWOOD_SIGN)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModItems.DRIFTWOOD_HANGING_SIGN, 6)
+                .pattern("P P")
+                .pattern("SSS")
+                .pattern("SSS")
+                .input('P', Blocks.CHAIN)
+                .input('S', ModBlocks.STRIPPED_DRIFTWOOD_LOG)
+                .criterion(hasItem(ModBlocks.STRIPPED_DRIFTWOOD_LOG), conditionsFromItem(ModBlocks.STRIPPED_DRIFTWOOD_LOG))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.DRIFTWOOD_HANGING_SIGN)));
+
         offerSmelting(exporter, List.of(ModItems.RAW_PINK_GARNET, ModBlocks.PINK_GARNET_ORE, ModBlocks.DEEPSLATE_PINK_GARNET_ORE,
                         ModBlocks.NETHER_PINK_GARNET_ORE, ModBlocks.END_STONE_PINK_GARNET_ORE), RecipeCategory.MISC, ModItems.PINK_GARNET,
                 0.25f, 200, "pink_garnet");

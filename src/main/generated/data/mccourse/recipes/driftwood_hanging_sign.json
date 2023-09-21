@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "P": {
+      "item": "minecraft:chain"
+    },
+    "S": {
+      "item": "mccourse:stripped_driftwood_log"
+    }
+  },
+  "pattern": [
+    "P P",
+    "SSS",
+    "SSS"
+  ],
+  "result": {
+    "count": 6,
+    "item": "mccourse:driftwood_hanging_sign"
+  },
+  "show_notification": true
+}
