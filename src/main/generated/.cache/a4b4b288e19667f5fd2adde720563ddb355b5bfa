@@ -1,4 +1,4 @@
-// 1.20.1	2023-09-21T16:32:04.8483816	MC Course Mod/Recipes
+// 1.20.1	2023-09-23T13:58:13.0827073	MC Course Mod/Recipes
 3d9277186e0ea67a355e1bb913e74b8b4c1fbc2e data\mccourse\recipes\driftwood_planks_from_stripped_driftwood_log.json
 e46de6c1a03a0e2f68b16f8e71e4931fe4f068ce data\mccourse\recipes\pink_garnet_from_blasting_raw_pink_garnet.json
 bdeeec9e46cb14a5c9f12997c55d8e0dc460bd49 data\mccourse\advancements\recipes\misc\pink_garnet_fence_from_pink_garnet_block_stonecutting.json
@@ -11,8 +11,8 @@ bdeeec9e46cb14a5c9f12997c55d8e0dc460bd49 data\mccourse\advancements\recipes\misc
 f845cd175d96548940546fa6dee19a60fe288997 data\mccourse\advancements\recipes\enchanted_golden_apple.json
 a76dc63d75ceb59b7059b7b15150be32a72892b0 data\mccourse\recipes\driftwood_fence_gate.json
 3f0583366c7a7ecc507489c0735e031305fa2c33 data\mccourse\advancements\recipes\misc\pink_garnet_slab_from_pink_garnet_block_stonecutting.json
-cf5197344a17970c00017bffc0daadbf0e53f454 data\mccourse\advancements\recipes\tools\pink_garnet_paxel.json
 889e22c7483cf76cd17001a6e5732cf516b05f3d data\mccourse\recipes\pink_garnet_shovel.json
+cf5197344a17970c00017bffc0daadbf0e53f454 data\mccourse\advancements\recipes\tools\pink_garnet_paxel.json
 99b3a1ff56aaeba397852e02b73ae51dfd32ad7e data\mccourse\recipes\pink_garnet_from_smelting_pink_garnet_ore.json
 23501730f8fd2dea286d90c35325c947b44d7a5b data\mccourse\recipes\driftwood_pressure_plate.json
 b6686e5cb7f1f43c063e7e877d819c8044d8782f data\mccourse\advancements\recipes\building_blocks\driftwood_fence.json

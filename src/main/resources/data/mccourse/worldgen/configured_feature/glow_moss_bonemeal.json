@@ -14,26 +14,8 @@
     "surface": "floor",
     "vegetation_chance": 0.6,
     "vegetation_feature": {
-      "feature": {
-        "type": "minecraft:simple_block",
-        "config": {
-          "to_place": {
-            "type": "minecraft:simple_state_provider",
-            "state": {
-              "Name": "mccourse:glow_moss_carpet"
-            }
-          }
-        }
-      },
-      "placement": [
-        {
-          "type": "minecraft:block_predicate_filter",
-          "predicate": {
-            "type": "minecraft:matching_blocks",
-            "blocks": "minecraft:air"
-          }
-        }
-      ]
+      "feature": "mccourse:glow_moss_vegetation",
+      "placement": []
     },
     "vertical_range": 5,
     "xz_radius": {

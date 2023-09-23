@@ -1,9 +1,12 @@
 package net.co5mowulf.mccourse.world;
 
+import com.mojang.serialization.Codec;
 import net.co5mowulf.mccourse.MCCourseMod;
 import net.co5mowulf.mccourse.block.ModBlocks;
 import net.minecraft.block.Blocks;;
+import net.minecraft.block.MushroomBlock;
 import net.minecraft.registry.Registerable;
+import net.minecraft.registry.RegistryEntryLookup;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.BlockTags;
@@ -12,16 +15,18 @@ import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;;
 import net.minecraft.util.collection.DataPool;
+import net.minecraft.util.collection.Pool;
+import net.minecraft.util.collection.Weighted;
+import net.minecraft.util.collection.WeightedList;
 import net.minecraft.util.math.VerticalSurfaceType;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
-import net.minecraft.util.math.intprovider.IntProvider;
-import net.minecraft.util.math.intprovider.IntProviderType;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
-import net.minecraft.util.math.random.Random;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.SpruceFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.stateprovider.BlockStateProviderType;
+import net.minecraft.world.gen.stateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.stateprovider.WeightedBlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
@@ -40,6 +45,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> GLOW_MUSHROOM_KEY = registerKey("glow_mushroom");
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> GLOW_MOSS_BONEMEAL_KEY = registerKey("glow_moss_bonemeal");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> GLOW_MOSS_VEGETATION_KEY = registerKey("glow_moss_vegetation");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
 
@@ -73,23 +79,9 @@ public class ModConfiguredFeatures {
                 new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.PETUNIA)))));
 
         register(context, GLOW_MUSHROOM_KEY, Feature.HUGE_RED_MUSHROOM, new HugeMushroomFeatureConfig(
-                BlockStateProvider.of(ModBlocks.ORANGE_GLOW_MUSHROOM_BLOCK),
-                BlockStateProvider.of(Blocks.MUSHROOM_STEM),
+                BlockStateProvider.of(ModBlocks.ORANGE_GLOW_MUSHROOM_BLOCK.getDefaultState().with(MushroomBlock.DOWN, false)),
+                BlockStateProvider.of(Blocks.MUSHROOM_STEM.getDefaultState().with(MushroomBlock.UP, false).with(MushroomBlock.DOWN, false)),
                 2));
-
-        register(context, GLOW_MOSS_BONEMEAL_KEY, Feature.VEGETATION_PATCH, new VegetationPatchFeatureConfig(
-                BlockTags.MOSS_REPLACEABLE,
-                BlockStateProvider.of(ModBlocks.GLOW_MOSS_BLOCK),
-                PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
-                        new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.GLOW_MOSS_CARPET))),
-                VerticalSurfaceType.FLOOR,
-                ConstantIntProvider.create(1),
-                0.0f,
-                5,
-                0.6f,
-                UniformIntProvider.create(1,2),
-                0.75f
-        ));
     }
 
 

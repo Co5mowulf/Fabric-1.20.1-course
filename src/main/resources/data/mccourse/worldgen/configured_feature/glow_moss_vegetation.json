@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "data": {
+            "Name": "mccourse:orange_glow_mushroom"
+          },
+          "weight": 7
+        },
+        {
+          "data": {
+            "Name": "mccourse:glow_moss_carpet"
+          },
+          "weight": 25
+        },
+        {
+          "data": {
+            "Name": "minecraft:grass"
+          },
+          "weight": 50
+        }
+      ]
+    }
+  }
+}
