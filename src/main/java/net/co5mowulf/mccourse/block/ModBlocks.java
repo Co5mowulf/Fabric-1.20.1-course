@@ -137,6 +137,9 @@ public class ModBlocks {
     public static final Block POTTED_ORANGE_GLOW_MUSHROOM = registerBlockWithoutBlockItem("potted_orange_glow_mushroom",
             new FlowerPotBlock(ORANGE_GLOW_MUSHROOM, FabricBlockSettings.copyOf(Blocks.POTTED_RED_MUSHROOM).nonOpaque().luminance(12)));
 
+    public static final Block GLOW_SPROUTS = registerBlockWithoutBlockItem("glow_sprouts",
+            new SproutsBlock(FabricBlockSettings.copyOf(Blocks.NETHER_SPROUTS).luminance(12).nonOpaque()));
+
     //Methods
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, new Identifier(MCCourseMod.MOD_ID, name), block);

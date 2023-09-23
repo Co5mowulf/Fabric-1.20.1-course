@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.co5mowulf.mccourse.MCCourseMod;
 import net.co5mowulf.mccourse.block.ModBlocks;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -39,6 +40,9 @@ public class ModItems {
             new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.DRIFTWOOD_SIGN, ModBlocks.DRIFTWOOD_WALL_SIGN));
     public static final Item DRIFTWOOD_HANGING_SIGN = registerItem("driftwood_hanging_sign",
             new HangingSignItem(ModBlocks.DRIFTWOOD_HANGING_SIGN, ModBlocks.DRIFTWOOD_HANGING_WALL_SIGN, new FabricItemSettings().maxCount(16)));
+
+    public static final Item GLOW_SPROUTS = Items.register(ModBlocks.GLOW_SPROUTS);
+
 
     //Food Items
     public static final Item CAULIFLOWER = registerItem("cauliflower",

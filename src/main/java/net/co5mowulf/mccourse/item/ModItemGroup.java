@@ -57,6 +57,7 @@ public class ModItemGroup {
                         entries.add(ModBlocks.GLOW_MOSS_CARPET);
                         entries.add(ModBlocks.ORANGE_GLOW_MUSHROOM_BLOCK);
                         entries.add(ModBlocks.ORANGE_GLOW_MUSHROOM);
+                        entries.add(ModItems.GLOW_SPROUTS);
 
                         entries.add(ModBlocks.SOUND_BLOCK);
                         entries.add(ModBlocks.PINK_GARNET_LAMP_BLOCK);

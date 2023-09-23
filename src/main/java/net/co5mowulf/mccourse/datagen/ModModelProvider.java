@@ -33,6 +33,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerWoolAndCarpet(ModBlocks.GLOW_MOSS_BLOCK, ModBlocks.GLOW_MOSS_CARPET);
         blockStateModelGenerator.registerMushroomBlock(ModBlocks.ORANGE_GLOW_MUSHROOM_BLOCK);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.ORANGE_GLOW_MUSHROOM, ModBlocks.POTTED_ORANGE_GLOW_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.GLOW_SPROUTS, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOUND_BLOCK);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.GEM_EMPOWERING_STATION);
@@ -52,8 +54,6 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerCrop(ModBlocks.CAULIFLOWER_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.PETUNIA, ModBlocks.POTTED_PETUNIA, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.ORANGE_GLOW_MUSHROOM, ModBlocks.POTTED_ORANGE_GLOW_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
-
 
         BlockStateModelGenerator.BlockTexturePool driftwoodPlanksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DRIFTWOOD_PLANKS);
 
