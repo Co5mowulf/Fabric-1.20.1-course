@@ -1,9 +1,9 @@
 package net.co5mowulf.mccourse;
 
-import net.co5mowulf.mccourse.MCCourseMod;
 import net.co5mowulf.mccourse.block.entity.ModBlockEntities;
 import net.co5mowulf.mccourse.block.entity.renderer.GemEmpoweringBlockEntityRenderer;
 import net.co5mowulf.mccourse.networking.ModMessages;
+import net.co5mowulf.mccourse.particle.GlowMossParticle;
 import net.co5mowulf.mccourse.util.ModWoodTypes;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
@@ -44,6 +44,7 @@ public class MCCourseModClient implements ClientModInitializer {
         ModModelPredicateProvider.registerModModels();
 
         ParticleFactoryRegistry.getInstance().register(ModParticles.PINK_GARNET_PARTICLE, PinkGarnetParticle.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(ModParticles.GLOW_MOSS_PARTICLE, GlowMossParticle.Factory::new);
 
         FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_SOAP_WATER, ModFluids.FLOWING_SOAP_WATER,
                 SimpleFluidRenderHandler.coloredWater(0xA1E038D0));
