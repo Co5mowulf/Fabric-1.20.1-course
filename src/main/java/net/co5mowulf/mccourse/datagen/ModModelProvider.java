@@ -1,5 +1,6 @@
 package net.co5mowulf.mccourse.datagen;
 
+import dev.architectury.platform.Mod;
 import net.co5mowulf.mccourse.block.custom.CauliflowerCropBlock;
 import net.co5mowulf.mccourse.block.custom.PinkGarnetLampBlock;
 import net.co5mowulf.mccourse.fluid.ModFluids;
@@ -8,6 +9,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.co5mowulf.mccourse.block.ModBlocks;
 import net.co5mowulf.mccourse.item.ModItems;
 
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.MossBlock;
@@ -33,8 +35,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerWoolAndCarpet(ModBlocks.GLOW_MOSS_BLOCK, ModBlocks.GLOW_MOSS_CARPET);
         blockStateModelGenerator.registerMushroomBlock(ModBlocks.ORANGE_GLOW_MUSHROOM_BLOCK);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.ORANGE_GLOW_MUSHROOM, ModBlocks.POTTED_ORANGE_GLOW_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.GLOW_SPROUTS, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.ORANGE_GLOW_MUSHROOM, ModBlocks.POTTED_ORANGE_GLOW_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOUND_BLOCK);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.GEM_EMPOWERING_STATION);
