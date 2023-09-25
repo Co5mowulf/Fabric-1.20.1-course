@@ -9,13 +9,13 @@ public class GlowMossParticle extends SpriteBillboardParticle {
                             SpriteProvider spriteSet, double xd, double yd, double zd) {
         super(world, xCoord, yCoord, zCoord, xd, yd, zd);
 
-        this.velocityMultiplier = 0.5f;
+        this.velocityMultiplier = 0f;
         this.velocityX = xd;
         this.velocityY = yd;
         this.velocityZ = zd;
 
-        this.scale *= 0.75f;
-        this.maxAge = 10;
+        this.scale *= 0.5f;
+        this.maxAge = 20;
         this.setSpriteForAge(spriteSet);
 
         this.red = 1f;
