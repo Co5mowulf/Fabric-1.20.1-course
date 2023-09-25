@@ -3,7 +3,6 @@ package net.co5mowulf.mccourse.particle;
 import net.minecraft.client.particle.*;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.particle.DefaultParticleType;
-import org.jetbrains.annotations.Nullable;
 
 public class GlowMossParticle extends SpriteBillboardParticle {
     public GlowMossParticle(ClientWorld world, double xCoord, double yCoord, double zCoord,

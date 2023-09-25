@@ -45,7 +45,7 @@ public class GlowMossBlock
     public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
         super.randomDisplayTick(state, world, pos, random);
         if (random.nextInt(10) == 0) {
-            world.addParticle(ModParticles.GLOW_MOSS_PARTICLE, (double)pos.getX() + random.nextDouble(), (double)pos.getY() + 1.1, (double)pos.getZ() + random.nextDouble(), 0.0, 0.0, 0.0);
+            world.addParticle(ModParticles.GLOW_MOSS_PARTICLE, (double)pos.getX() + random.nextDouble(), (double)pos.getY() + 1.1, (double)pos.getZ() + random.nextDouble(), 0.0, 0.05, 0.0);
         }
     }
 }
