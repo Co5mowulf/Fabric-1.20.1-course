@@ -52,13 +52,6 @@ public class ModItemGroup {
                         entries.add(ModBlocks.END_STONE_PINK_GARNET_ORE);
                         entries.add(ModBlocks.NETHER_PINK_GARNET_ORE);
 
-                        entries.add(ModBlocks.PETUNIA);
-                        entries.add(ModBlocks.GLOW_MOSS_BLOCK);
-                        entries.add(ModBlocks.GLOW_MOSS_CARPET);
-                        entries.add(ModBlocks.ORANGE_GLOW_MUSHROOM_BLOCK);
-                        entries.add(ModBlocks.ORANGE_GLOW_MUSHROOM);
-                        entries.add(ModItems.GLOW_SPROUTS);
-
                         entries.add(ModBlocks.SOUND_BLOCK);
                         entries.add(ModBlocks.PINK_GARNET_LAMP_BLOCK);
                         entries.add(ModBlocks.GEM_EMPOWERING_STATION);
@@ -88,6 +81,13 @@ public class ModItemGroup {
                         entries.add(ModBlocks.DRIFTWOOD_FENCE_GATE);
                         entries.add(ModItems.DRIFTWOOD_SIGN);
                         entries.add(ModItems.DRIFTWOOD_HANGING_SIGN);
+
+                        entries.add(ModBlocks.PETUNIA);
+                        entries.add(ModBlocks.GLOW_MOSS_BLOCK);
+                        entries.add(ModBlocks.GLOW_MOSS_CARPET);
+                        entries.add(ModBlocks.ORANGE_GLOW_MUSHROOM_BLOCK);
+                        entries.add(ModBlocks.ORANGE_GLOW_MUSHROOM);
+                        entries.add(ModItems.GLOW_SPROUTS);
 
                     }).build());
 

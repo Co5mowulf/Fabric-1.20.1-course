@@ -41,8 +41,8 @@ public class ModItems {
     public static final Item DRIFTWOOD_HANGING_SIGN = registerItem("driftwood_hanging_sign",
             new HangingSignItem(ModBlocks.DRIFTWOOD_HANGING_SIGN, ModBlocks.DRIFTWOOD_HANGING_WALL_SIGN, new FabricItemSettings().maxCount(16)));
 
-    public static final Item GLOW_SPROUTS = Items.register(ModBlocks.GLOW_SPROUTS);
-
+    public static final Item GLOW_SPROUTS = registerItem("glow_sprouts",
+            new AliasedBlockItem(ModBlocks.GLOW_SPROUTS, new FabricItemSettings()));
 
     //Food Items
     public static final Item CAULIFLOWER = registerItem("cauliflower",

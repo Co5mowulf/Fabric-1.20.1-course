@@ -1,4 +1,4 @@
-// 1.20.1	2023-09-23T20:59:38.4499672	MC Course Mod/Model Definitions
+// 1.20.1	2023-09-25T20:08:36.7512536	MC Course Mod/Model Definitions
 2afc0d8ff001d06b04710b19590fcf2e60e3cbb7 assets\mccourse\models\item\pink_garnet_helmet_diamond_trim.json
 f7cfe32a7c4fbf4152511eb87c606d6a21cea79f assets\mccourse\models\item\pink_garnet_chestplate_redstone_trim.json
 615fc22198dc1e7267d2506778618863d3609259 assets\mccourse\models\block\pink_garnet_ore.json
@@ -59,8 +59,8 @@ a9c2ad639a17a7e11ba8db0407d46df21d585d43 assets\mccourse\models\block\pink_garne
 209512dbed7df0c0cee2c76ddc1de52a0fe439f9 assets\mccourse\models\block\pink_garnet_button_pressed.json
 0b6763db0b2ee2247303bd3176b8677d233bb68f assets\mccourse\models\block\pink_garnet_wall_inventory.json
 2a5807a99451a3b534a13647bd898a97515b34ad assets\mccourse\models\block\cauliflower_crop_stage3.json
-34a026a3017788132a2463c6d217b1bc12d56f4a assets\mccourse\blockstates\pink_garnet_ore.json
 b41bf37c4a2356ee7606499660f9e60357595c89 assets\mccourse\blockstates\driftwood_leaves.json
+34a026a3017788132a2463c6d217b1bc12d56f4a assets\mccourse\blockstates\pink_garnet_ore.json
 e878ea32e2f415ac5c8ffb792b5c5e17acc4539a assets\mccourse\blockstates\pink_garnet_block.json
 220cc2c16b236fff8ac4796cdd7b920f8bfeb71c assets\mccourse\models\item\pink_garnet_boots_gold_trim.json
 cba69c051c345a7ad11f32a048e510fdbc635638 assets\mccourse\models\item\pink_garnet_boots_copper_trim.json
@@ -72,7 +72,7 @@ b4c0c9b7f85c71fc872449a7121e53b77c3d74d2 assets\mccourse\models\block\cauliflowe
 cd5a9c52fa2718e8c315869b9c8a65f39c0b3aa2 assets\mccourse\models\item\pink_garnet_fence.json
 36d9661633e7d5c643333b50b9b9543ba79a6a8d assets\mccourse\models\item\pink_garnet_chestplate_diamond_trim.json
 7d430ebd5e0a3a1e2d12a9dcb173d08795b2b509 assets\mccourse\models\block\pink_garnet_lamp_block.json
-34a803220377de2757ebb7512e5223fc6c909ec6 assets\mccourse\models\item\glow_sprouts.json
+ee009eef858ca876f4350052df21003151520ead assets\mccourse\models\item\glow_sprouts.json
 05181b13c44e65c6ef3a58ee991e7edfd3be026a assets\mccourse\models\item\pink_garnet_boots_amethyst_trim.json
 c3175e98e717b6915431695ee9ccde0cb1633cf8 assets\mccourse\models\block\orange_glow_mushroom_block.json
 075d29ffafb2118112bf19c9ed54db3ee617dc64 assets\mccourse\models\block\pink_garnet_wall_side_tall.json
