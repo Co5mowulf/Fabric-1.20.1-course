@@ -36,6 +36,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerWoolAndCarpet(ModBlocks.GLOW_MOSS_BLOCK, ModBlocks.GLOW_MOSS_CARPET);
         blockStateModelGenerator.registerMushroomBlock(ModBlocks.ORANGE_GLOW_MUSHROOM_BLOCK);
         blockStateModelGenerator.registerTintableCross(ModBlocks.GLOW_SPROUTS, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerDoubleBlock(ModBlocks.YELLOW_GLOW_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.ORANGE_GLOW_MUSHROOM, ModBlocks.POTTED_ORANGE_GLOW_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOUND_BLOCK);

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "mccourse:block/yellow_glow_mushroom_bottom"
+  }
+}

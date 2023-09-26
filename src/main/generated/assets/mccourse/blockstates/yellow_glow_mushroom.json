@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "mccourse:block/yellow_glow_mushroom_bottom"
+    },
+    "half=upper": {
+      "model": "mccourse:block/yellow_glow_mushroom_top"
+    }
+  }
+}
