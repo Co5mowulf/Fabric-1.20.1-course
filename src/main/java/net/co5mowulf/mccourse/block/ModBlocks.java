@@ -142,7 +142,7 @@ public class ModBlocks {
             new SproutsBlock(FabricBlockSettings.copyOf(Blocks.NETHER_SPROUTS).luminance(12).nonOpaque()));
 
     public static final Block YELLOW_GLOW_MUSHROOM = registerBlock("yellow_glow_mushroom",
-            new TallFlowerBlock(FabricBlockSettings.copyOf(Blocks.ROSE_BUSH).luminance(12).nonOpaque()));
+            new TallMushroomBlock(FabricBlockSettings.copyOf(Blocks.ROSE_BUSH).luminance(12).nonOpaque()));
 
     //Methods
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
