@@ -8,7 +8,7 @@
           "data": {
             "Name": "mccourse:orange_glow_mushroom"
           },
-          "weight": 3
+          "weight": 5
         },
         {
           "data": {
@@ -21,6 +21,15 @@
             "Name": "mccourse:glow_sprouts"
           },
           "weight": 10
+        },
+        {
+          "data": {
+            "Name": "mccourse:yellow_glow_mushroom",
+            "Properties": {
+              "half": "lower"
+            }
+          },
+          "weight": 2
         }
       ]
     }
