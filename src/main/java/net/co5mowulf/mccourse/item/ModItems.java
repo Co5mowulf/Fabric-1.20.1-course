@@ -1,5 +1,6 @@
 package net.co5mowulf.mccourse.item;
 
+import net.co5mowulf.mccourse.entity.ModEntities;
 import net.co5mowulf.mccourse.item.custom.*;
 import net.co5mowulf.mccourse.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -29,7 +30,6 @@ public class ModItems {
             new DataTabletItem(new FabricItemSettings().maxCount(1)));
     public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc",
             new MusicDiscItem(9, ModSounds.BAR_BRAWL, new FabricItemSettings().maxCount(1), 122));
-
     public static final Item RADIATION_STAFF = registerItem("radiation_staff",
             new Item(new FabricItemSettings().maxCount(1)));
     public static final Item PINK_GARNET_BOW = registerItem("pink_garnet_bow",
@@ -40,7 +40,8 @@ public class ModItems {
             new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.DRIFTWOOD_SIGN, ModBlocks.DRIFTWOOD_WALL_SIGN));
     public static final Item DRIFTWOOD_HANGING_SIGN = registerItem("driftwood_hanging_sign",
             new HangingSignItem(ModBlocks.DRIFTWOOD_HANGING_SIGN, ModBlocks.DRIFTWOOD_HANGING_WALL_SIGN, new FabricItemSettings().maxCount(16)));
-
+    public static final Item PORCUPINE_SPAWN_EGG = registerItem("porcupine_spawn_egg",
+            new SpawnEggItem(ModEntities.PORCUPINE, 0xa86515, 0x3b250f, new FabricItemSettings()));
     public static final Item GLOW_SPROUTS = registerItem("glow_sprouts",
             new AliasedBlockItem(ModBlocks.GLOW_SPROUTS, new FabricItemSettings()));
 

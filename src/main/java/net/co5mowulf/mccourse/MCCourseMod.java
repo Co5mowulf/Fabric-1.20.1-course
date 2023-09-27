@@ -1,5 +1,6 @@
 package net.co5mowulf.mccourse;
 
+import net.co5mowulf.mccourse.entity.ModEntities;
 import net.co5mowulf.mccourse.recipe.ModRecipes;
 import net.co5mowulf.mccourse.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
@@ -53,5 +54,7 @@ public class MCCourseMod implements ModInitializer {
 
 		ModRecipes.registerRecipes();
 		ModWorldGeneration.generateModWorldGeneration();
+
+		ModEntities.registerModEntities();
 	}
 }

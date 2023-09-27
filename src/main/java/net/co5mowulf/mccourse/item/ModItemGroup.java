@@ -90,6 +90,8 @@ public class ModItemGroup {
                         entries.add(ModItems.GLOW_SPROUTS);
                         entries.add(ModBlocks.YELLOW_GLOW_MUSHROOM);
 
+                        entries.add(ModItems.PORCUPINE_SPAWN_EGG);
+
                     }).build());
 
     public static void registerItemGroups() {

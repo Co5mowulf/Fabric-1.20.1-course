@@ -3,6 +3,8 @@ package net.co5mowulf.mccourse.util;
 import net.co5mowulf.mccourse.block.ModBlocks;
 import net.co5mowulf.mccourse.command.ReturnHomeCommand;
 import net.co5mowulf.mccourse.command.SetHomeCommand;
+import net.co5mowulf.mccourse.entity.ModEntities;
+import net.co5mowulf.mccourse.entity.custom.PorcupineEntity;
 import net.co5mowulf.mccourse.event.AttackEntityHandler;
 import net.co5mowulf.mccourse.event.PlayerCopyHandler;
 import net.co5mowulf.mccourse.mixin.BrewingRecipeRegistryMixin;
@@ -11,6 +13,7 @@ import net.co5mowulf.mccourse.villager.ModVillagerProfession;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
@@ -35,12 +38,17 @@ public class ModRegistries {
         registerCustomTrades();
         registerFlammables();
         registerStrippables();
+        registerAttributes();
     }
 
     private static void registerFuels() {
         FuelRegistry registry = FuelRegistry.INSTANCE;
 
         registry.add(ModItems.PEAT_BRICK, 200);
+    }
+
+    private static void registerAttributes() {
+        FabricDefaultAttributeRegistry.register(ModEntities.PORCUPINE, PorcupineEntity.createPorcupineAttributes());
     }
 
     private static void registerModCompostables(){
