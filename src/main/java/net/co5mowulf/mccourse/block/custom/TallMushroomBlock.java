@@ -1,10 +1,14 @@
 package net.co5mowulf.mccourse.block.custom;
 
 import net.minecraft.block.*;
+import net.minecraft.block.enums.DoubleBlockHalf;
+import net.minecraft.item.TallBlockItem;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.state.property.EnumProperty;
+import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.util.shape.VoxelShape;
