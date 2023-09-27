@@ -1,13 +1,45 @@
 package net.co5mowulf.mccourse.block.custom;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.TallFlowerBlock;
 import net.minecraft.block.TallPlantBlock;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
+import net.minecraft.world.gen.feature.ConfiguredFeature;
 
-public class TallMushroomBlock extends TallPlantBlock {
+import java.util.Optional;
+
+public class TallMushroomBlock extends TallFlowerBlock {
+
+    @Override
+    public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+        if (random.nextInt(25) == 0) {
+            int i = 5;
+            int j = 4;
+            for (BlockPos blockPos : BlockPos.iterate(pos.add(-4, -1, -4), pos.add(4, 1, 4))) {
+                if (!world.getBlockState(blockPos).isOf(this) || --i > 0) continue;
+                return;
+            }
+            BlockPos blockPos2 = pos.add(random.nextInt(3) - 1, random.nextInt(2) - random.nextInt(2), random.nextInt(3) - 1);
+            for (int k = 0; k < 4; ++k) {
+                if (world.isAir(blockPos2) && state.canPlaceAt(world, blockPos2)) {
+                    pos = blockPos2;
+                }
+                blockPos2 = pos.add(random.nextInt(3) - 1, random.nextInt(2) - random.nextInt(2), random.nextInt(3) - 1);
+            }
+            if (world.isAir(blockPos2) && state.canPlaceAt(world, blockPos2)) {
+                world.setBlockState(blockPos2, state, Block.NOTIFY_LISTENERS);
+            }
+        }
+    }
 
     @Override
     protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
