@@ -3,6 +3,7 @@ package net.co5mowulf.mccourse.entity.custom;
 import net.co5mowulf.mccourse.entity.ModEntities;
 import net.co5mowulf.mccourse.entity.ai.PorcupineAttackGoal;
 import net.co5mowulf.mccourse.entity.variant.PorcupineVariant;
+import net.co5mowulf.mccourse.item.ModItems;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.*;
 import net.minecraft.entity.ai.goal.*;
@@ -21,6 +22,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -63,12 +65,15 @@ public class PorcupineEntity extends TameableEntity implements Mount{
         this.goalSelector.add(0, new SitGoal(this));
         this.goalSelector.add(1, new PorcupineAttackGoal(this, 1.1D, true));
 
-        this.goalSelector.add(2, new FollowOwnerGoal(this, 1.1D, 10f, 3f, false));
-        this.goalSelector.add(2, new FollowParentGoal(this, 1.1D));
+        this.goalSelector.add(2, new AnimalMateGoal(this, 1.1D));
+        this.goalSelector.add(3, new TemptGoal(this, 1.1D, Ingredient.ofItems(ModItems.CAULIFLOWER), false));
 
-        this.goalSelector.add(3, new WanderAroundFarGoal(this, 1.0D));
-        this.goalSelector.add(4, new LookAtEntityGoal(this, PlayerEntity.class, 4.0F));
-        this.goalSelector.add(5, new LookAroundGoal(this));
+        this.goalSelector.add(4, new FollowOwnerGoal(this, 1.1D, 10f, 3f, false));
+        this.goalSelector.add(4, new FollowParentGoal(this, 1.1D));
+
+        this.goalSelector.add(5, new WanderAroundFarGoal(this, 1.0D));
+        this.goalSelector.add(6, new LookAtEntityGoal(this, PlayerEntity.class, 4.0F));
+        this.goalSelector.add(7, new LookAroundGoal(this));
 
         this.targetSelector.add(1, new RevengeGoal(this));
     }
@@ -234,7 +239,7 @@ public class PorcupineEntity extends TameableEntity implements Mount{
             }
         }
 
-        if(isTamed() && hand == Hand.MAIN_HAND && item != itemForTaming) {
+        if(isTamed() && hand == Hand.MAIN_HAND && item != itemForTaming && !isBreedingItem(itemstack)) {
             if(!player.isSneaking()) {
                 setRiding(player);
             } else {
@@ -323,5 +328,12 @@ public class PorcupineEntity extends TameableEntity implements Mount{
             }
         }
         return super.updatePassengerForDismount(passenger);
+    }
+
+    /* BREEDABLE */
+
+    @Override
+    public boolean isBreedingItem(ItemStack stack) {
+        return stack.isOf(ModItems.CAULIFLOWER);
     }
 }
