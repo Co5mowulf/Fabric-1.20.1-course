@@ -55,7 +55,7 @@ public class TallMushroomBlock extends TallPlantBlock {
         if (blockState.isIn(BlockTags.MUSHROOM_GROW_BLOCK)) {
             return true;
         }
-        return world.getBaseLightLevel(pos, 0) < 13 && this.canPlantOnTop(blockState, world, blockPos);
+        return world.getBaseLightLevel(pos, 0) < 13 && super.canPlaceAt(state, world, pos);
     }
 
     public TallMushroomBlock(Settings settings) {
