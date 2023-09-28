@@ -2,9 +2,8 @@ package net.co5mowulf.mccourse.entity.custom;
 
 import net.co5mowulf.mccourse.entity.ModEntities;
 import net.co5mowulf.mccourse.entity.ai.PorcupineAttackGoal;
-import net.minecraft.entity.AnimationState;
-import net.minecraft.entity.EntityPose;
-import net.minecraft.entity.EntityType;
+import net.co5mowulf.mccourse.entity.variant.PorcupineVariant;
+import net.minecraft.entity.*;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -15,14 +14,20 @@ import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.util.Util;
+import net.minecraft.world.LocalDifficulty;
+import net.minecraft.world.ServerWorldAccess;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public class PorcupineEntity extends AnimalEntity {
-
-    public static final TrackedData<Boolean> ATTACKING =
+    private static final TrackedData<Boolean> ATTACKING =
             DataTracker.registerData(PorcupineEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
+
+    private static final TrackedData<Integer> DATA_ID_TYPE_VARIANT =
+            DataTracker.registerData(PorcupineEntity.class, TrackedDataHandlerRegistry.INTEGER);
 
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
@@ -38,6 +43,7 @@ public class PorcupineEntity extends AnimalEntity {
     protected void initGoals() {
         this.goalSelector.add(0, new SwimGoal(this));
         this.goalSelector.add(1, new PorcupineAttackGoal(this, 1.1D, true));
+
         this.goalSelector.add(1, new FollowParentGoal(this, 1.1D));
         this.goalSelector.add(2, new WanderAroundFarGoal(this, 1.0D));
         this.goalSelector.add(3, new LookAtEntityGoal(this, PlayerEntity.class, 4.0F));
@@ -53,13 +59,15 @@ public class PorcupineEntity extends AnimalEntity {
         } else {
             --this.idleAnimationTimeout;
         }
-        if (this.isAttacking() && attackAnimationTimeout <= 0) {
-            attackAnimationTimeout = 40;
+
+        if(this.isAttacking() && attackAnimationTimeout <= 0) {
+            attackAnimationTimeout = 40; // THIS IS LENGTH OF ANIMATION IN TICKS
             attackAnimationState.start(this.age);
         } else {
             --this.attackAnimationTimeout;
         }
-        if (!this.isAttacking()) {
+
+        if(!this.isAttacking()) {
             attackAnimationState.stop();
         }
     }
@@ -106,6 +114,7 @@ public class PorcupineEntity extends AnimalEntity {
     protected void initDataTracker() {
         super.initDataTracker();
         this.dataTracker.startTracking(ATTACKING, false);
+        this.dataTracker.startTracking(DATA_ID_TYPE_VARIANT, 0);
     }
 
     public void setAttacking(boolean attacking) {
@@ -114,5 +123,39 @@ public class PorcupineEntity extends AnimalEntity {
 
     public boolean isAttacking() {
         return this.dataTracker.get(ATTACKING);
+    }
+
+    /* VARIANT */
+
+    public PorcupineVariant getVariant() {
+        return PorcupineVariant.byId(this.getTypeVariant() & 255);
+    }
+
+    private int getTypeVariant() {
+        return this.dataTracker.get(DATA_ID_TYPE_VARIANT);
+    }
+
+    private void setVariant(PorcupineVariant variant) {
+        this.dataTracker.set(DATA_ID_TYPE_VARIANT, variant.getId() & 255);
+    }
+
+    @Override
+    public EntityData initialize(ServerWorldAccess world, LocalDifficulty difficulty, SpawnReason spawnReason,
+                                 @Nullable EntityData entityData, @Nullable NbtCompound entityNbt) {
+        PorcupineVariant variant = Util.getRandom(PorcupineVariant.values(), this.random);
+        setVariant(variant);
+        return super.initialize(world, difficulty, spawnReason, entityData, entityNbt);
+    }
+
+    @Override
+    public void readCustomDataFromNbt(NbtCompound nbt) {
+        super.readCustomDataFromNbt(nbt);
+        this.dataTracker.set(DATA_ID_TYPE_VARIANT, nbt.getInt("Variant"));
+    }
+
+    @Override
+    public void writeCustomDataToNbt(NbtCompound nbt) {
+        super.writeCustomDataToNbt(nbt);
+        nbt.putInt("Variant", this.getTypeVariant());
     }
 }
