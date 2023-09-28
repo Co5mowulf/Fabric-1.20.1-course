@@ -1,11 +1,11 @@
-// 1.20.1	2023-09-26T23:03:02.5177085	MC Course Mod/Tags for minecraft:block
+// 1.20.1	2023-09-27T10:49:42.1870426	MC Course Mod/Tags for minecraft:block
 ac7381ec75628ff455e4e862ac61c12577e71c8f data\fabric\tags\blocks\needs_tool_level_5.json
-b3bd1d783e30fc072c1a62aa9c3bcfac91fe812c data\minecraft\tags\blocks\doors.json
 13694180c91049201d3bb946910e80f8402ae819 data\minecraft\tags\blocks\mineable\hoe.json
+b3bd1d783e30fc072c1a62aa9c3bcfac91fe812c data\minecraft\tags\blocks\doors.json
 0aa3b30fe74db3ac0e887e749b662d21f6f7788c data\minecraft\tags\blocks\mineable\axe.json
-bbf6ed983473553c42e457780ba9959a3d4a3d58 data\mccourse\tags\blocks\metal_detector_detectable_blocks.json
-cac54469142d24a8401f95e0fb8d26528f2f0f9d data\minecraft\tags\blocks\needs_iron_tool.json
 aca4b193d86493c418e8590337b179e5ad60d85a data\minecraft\tags\blocks\trapdoors.json
+cac54469142d24a8401f95e0fb8d26528f2f0f9d data\minecraft\tags\blocks\needs_iron_tool.json
+bbf6ed983473553c42e457780ba9959a3d4a3d58 data\mccourse\tags\blocks\metal_detector_detectable_blocks.json
 a5d38c4dcc4756ccd3c98999787fd9edcf60457d data\minecraft\tags\blocks\crops.json
 39a9c20a939be03c9aeea6562ce58a40435a6a27 data\minecraft\tags\blocks\mushroom_grow_block.json
 205f915cdb9b4dc520cf5afeb65db250d13748ba data\minecraft\tags\blocks\mineable\pickaxe.json
@@ -18,7 +18,7 @@ e7d20e1649c9935aff53b4e689a343ef2fd40704 data\minecraft\tags\blocks\needs_diamon
 07debe05c2934250924291d400a52f9a026ad863 data\minecraft\tags\blocks\beacon_base_blocks.json
 3136f6c862734143e0b1e1807a340bff9a4b3f39 data\minecraft\tags\blocks\wooden_slabs.json
 39a9c20a939be03c9aeea6562ce58a40435a6a27 data\minecraft\tags\blocks\dirt.json
-517632cca94e9946eb0ffa70b9c76633dbe1cf71 data\minecraft\tags\blocks\walls.json
 5f61dd26372540d507d85b0d10ff9accc3352951 data\minecraft\tags\blocks\planks.json
+517632cca94e9946eb0ffa70b9c76633dbe1cf71 data\minecraft\tags\blocks\walls.json
 054139939470485ffcc4479b643d9d6e0f51496d data\minecraft\tags\blocks\fences.json
 1822b6a01ca988562f51827f6bc4f0a41d43f5b5 data\mccourse\tags\blocks\mineable\paxel.json
