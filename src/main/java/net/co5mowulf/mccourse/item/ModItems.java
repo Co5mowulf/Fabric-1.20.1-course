@@ -45,9 +45,6 @@ public class ModItems {
     public static final Item GLOW_SPROUTS = registerItem("glow_sprouts",
             new AliasedBlockItem(ModBlocks.GLOW_SPROUTS, new FabricItemSettings()));
 
-    public static final Item YELLOW_GLOW_MUSHROOM = registerItem("yellow_glow_mushroom",
-            new AliasedBlockItem(ModBlocks.YELLOW_GLOW_MUSHROOM, new FabricItemSettings()));
-
     //Food Items
     public static final Item CAULIFLOWER = registerItem("cauliflower",
             new Item(new FabricItemSettings().food(ModFoodComponents.CAULIFLOWER)));

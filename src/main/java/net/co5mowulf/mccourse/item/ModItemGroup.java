@@ -88,7 +88,7 @@ public class ModItemGroup {
                         entries.add(ModBlocks.ORANGE_GLOW_MUSHROOM_BLOCK);
                         entries.add(ModBlocks.ORANGE_GLOW_MUSHROOM);
                         entries.add(ModItems.GLOW_SPROUTS);
-                        entries.add(ModItems.YELLOW_GLOW_MUSHROOM);
+                        entries.add(ModBlocks.YELLOW_GLOW_MUSHROOM);
 
                         entries.add(ModItems.PORCUPINE_SPAWN_EGG);
 
