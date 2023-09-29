@@ -19,7 +19,7 @@ import net.minecraft.world.gen.feature.ConfiguredFeature;
 
 import java.util.Optional;
 
-public class TallMushroomBlock extends TallPlantBlock {
+public class TallMushroomBlock extends TallFlowerBlock {
 
     @Override
     public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
@@ -56,6 +56,11 @@ public class TallMushroomBlock extends TallPlantBlock {
             return true;
         }
         return world.getBaseLightLevel(pos, 0) < 13 && super.canPlaceAt(state, world, pos);
+    }
+
+    @Override
+    public boolean isFertilizable(WorldView world, BlockPos pos, BlockState state, boolean isClient) {
+        return false;
     }
 
     public TallMushroomBlock(Settings settings) {

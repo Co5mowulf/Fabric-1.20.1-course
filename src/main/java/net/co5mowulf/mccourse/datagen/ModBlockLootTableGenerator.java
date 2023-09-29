@@ -46,6 +46,7 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.GLOW_MOSS_BLOCK);
         addDrop(ModBlocks.GLOW_MOSS_CARPET);
         addDrop(ModBlocks.ORANGE_GLOW_MUSHROOM);
+        dropsWithShears(ModBlocks.GLOW_SPROUTS);
         addDrop(ModBlocks.DRIFTWOOD_SAPLING);
 
         addDrop(ModBlocks.DRIFTWOOD_SIGN, ModItems.DRIFTWOOD_SIGN);
