@@ -28,6 +28,8 @@ public class ModItems {
             new MetalDetectorItem(new FabricItemSettings().maxDamage(256)));
     public static final Item DATA_TABLET = registerItem("data_tablet",
             new DataTabletItem(new FabricItemSettings().maxCount(1)));
+    public static final Item DICE = registerItem("dice",
+            new DiceItem(new FabricItemSettings().maxCount(1)));
     public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc",
             new MusicDiscItem(9, ModSounds.BAR_BRAWL, new FabricItemSettings().maxCount(1), 122));
     public static final Item RADIATION_STAFF = registerItem("radiation_staff",

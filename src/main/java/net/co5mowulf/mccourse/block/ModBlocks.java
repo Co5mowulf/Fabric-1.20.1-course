@@ -50,6 +50,8 @@ public class ModBlocks {
     //Special Blocks
     public static final Block SOUND_BLOCK = registerBlock("sound_block",
             new SoundBlock(FabricBlockSettings.copyOf(Blocks.STONE)));
+    public static final Block DICE_BLOCK = registerBlockWithoutBlockItem("dice_block",
+            new DiceBlock(FabricBlockSettings.copyOf(Blocks.STONE)));
     public static final Block PINK_GARNET_LAMP_BLOCK = registerBlock("pink_garnet_lamp_block",
             new PinkGarnetLampBlock(FabricBlockSettings.create().mapColor(MapColor.RAW_IRON_PINK)
                     .instrument(Instrument.BASEDRUM).strength(4f).requiresTool()
