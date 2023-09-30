@@ -141,6 +141,7 @@ public class ModBlocks {
     public static final Block YELLOW_GLOW_MUSHROOM = registerBlock("yellow_glow_mushroom",
             new TallMushroomBlock(FabricBlockSettings.copyOf(Blocks.ROSE_BUSH).luminance(12).nonOpaque()));
 
+
     //Methods
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, new Identifier(MCCourseMod.MOD_ID, name), block);
