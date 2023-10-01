@@ -5,6 +5,7 @@
   "mixins": [
     "BrewingRecipeRegistryMixin",
     "ExampleMixin",
+    "FoliagePlacerTypeInvoker",
     "ModEntityDataSaverMixin",
     "PlayerEntityMixin",
     "TrunkPlacerTypeInvoker"

@@ -3,6 +3,7 @@ package net.co5mowulf.mccourse.world;
 import com.mojang.serialization.Codec;
 import net.co5mowulf.mccourse.MCCourseMod;
 import net.co5mowulf.mccourse.block.ModBlocks;
+import net.co5mowulf.mccourse.world.tree.custom.DriftwoodFoliagePlacer;
 import net.co5mowulf.mccourse.world.tree.custom.DriftwoodTrunkPlacer;
 import net.minecraft.block.Blocks;;
 import net.minecraft.block.MushroomBlock;
@@ -69,7 +70,7 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(ModBlocks.DRIFTWOOD_LOG),
                 new DriftwoodTrunkPlacer(5, 6, 3),
                 BlockStateProvider.of(ModBlocks.DRIFTWOOD_LEAVES),
-                new SpruceFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), ConstantIntProvider.create(2)),
+                new DriftwoodFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), 2),
                 new TwoLayersFeatureSize(1, 0, 2)).dirtProvider(BlockStateProvider.of(Blocks.END_STONE)).build());
 
         register(context, PINK_GARNET_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldPinkGarnetOres, 12));
