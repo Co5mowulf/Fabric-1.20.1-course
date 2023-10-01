@@ -3,6 +3,7 @@ package net.co5mowulf.mccourse;
 import net.co5mowulf.mccourse.entity.ModEntities;
 import net.co5mowulf.mccourse.recipe.ModRecipes;
 import net.co5mowulf.mccourse.world.gen.ModWorldGeneration;
+import net.co5mowulf.mccourse.world.tree.ModTrunkPlacerTypes;
 import net.fabricmc.api.ModInitializer;
 
 import net.co5mowulf.mccourse.block.ModBlocks;
@@ -56,5 +57,6 @@ public class MCCourseMod implements ModInitializer {
 		ModWorldGeneration.generateModWorldGeneration();
 
 		ModEntities.registerModEntities();
+		ModTrunkPlacerTypes.register();
 	}
 }
