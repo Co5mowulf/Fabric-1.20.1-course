@@ -45,7 +45,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> GLOW_MUSHROOM_KEY = registerKey("glow_mushroom");
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> GLOW_MOSS_BONEMEAL_KEY = registerKey("glow_moss_bonemeal");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> GLOW_MOSS_VEGETATION_KEY = registerKey("glow_moss_vegetation");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> PINK_GARNET_GEODE_KEY = registerKey("pink_garnet_geode");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
 
@@ -82,6 +82,20 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(ModBlocks.ORANGE_GLOW_MUSHROOM_BLOCK.getDefaultState().with(MushroomBlock.DOWN, false)),
                 BlockStateProvider.of(Blocks.MUSHROOM_STEM.getDefaultState().with(MushroomBlock.UP, false).with(MushroomBlock.DOWN, false)),
                 2));
+
+        register(context, PINK_GARNET_GEODE_KEY, Feature.GEODE, new GeodeFeatureConfig(new GeodeLayerConfig(BlockStateProvider.of(Blocks.AIR),
+                BlockStateProvider.of(Blocks.DEEPSLATE),
+                BlockStateProvider.of(ModBlocks.PINK_GARNET_ORE),
+                BlockStateProvider.of(Blocks.DIRT),
+                BlockStateProvider.of(Blocks.EMERALD_BLOCK),
+                List.of(ModBlocks.PINK_GARNET_BLOCK.getDefaultState()),
+                BlockTags.FEATURES_CANNOT_REPLACE , BlockTags.GEODE_INVALID_BLOCKS),
+                new GeodeLayerThicknessConfig(1.7D, 1.2D, 2.5D, 3.5D),
+                new GeodeCrackConfig(0.25D, 1.5D, 1),
+                0.5D, 0.1D,
+                true, UniformIntProvider.create(3, 8),
+                UniformIntProvider.create(2, 6), UniformIntProvider.create(1, 2),
+                -18, 18, 0.075D, 1));
     }
 
 
