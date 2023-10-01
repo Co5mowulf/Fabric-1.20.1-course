@@ -2,6 +2,7 @@ package net.co5mowulf.mccourse.entity;
 
 import net.co5mowulf.mccourse.MCCourseMod;
 import net.co5mowulf.mccourse.entity.custom.DiceProjectileEntity;
+import net.co5mowulf.mccourse.entity.custom.MagicProjectileEntity;
 import net.co5mowulf.mccourse.entity.custom.PorcupineEntity;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.fabricmc.fabric.impl.object.builder.FabricEntityType;
@@ -25,6 +26,11 @@ public class ModEntities {
             new Identifier(MCCourseMod.MOD_ID, "dice_projectile"),
             FabricEntityTypeBuilder.<DiceProjectileEntity>create(SpawnGroup.CREATURE, DiceProjectileEntity::new)
                     .dimensions(EntityDimensions.fixed(0.25f, 0.25f)).build());
+
+    public static final EntityType<MagicProjectileEntity> MAGIC_PROJECTILE = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(MCCourseMod.MOD_ID, "magic_projectile"),
+            FabricEntityTypeBuilder.<MagicProjectileEntity>create(SpawnGroup.CREATURE, MagicProjectileEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.5f, 0.5f)).build());
 
     public static void registerModEntities() {
         MCCourseMod.LOGGER.info("Registering Mod Entities for " + MCCourseMod.MOD_ID);

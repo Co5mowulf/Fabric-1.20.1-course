@@ -33,7 +33,7 @@ public class ModItems {
     public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc",
             new MusicDiscItem(9, ModSounds.BAR_BRAWL, new FabricItemSettings().maxCount(1), 122));
     public static final Item RADIATION_STAFF = registerItem("radiation_staff",
-            new Item(new FabricItemSettings().maxCount(1)));
+            new RadiationStaffItem(new FabricItemSettings().maxCount(1).maxDamage(1024)));
     public static final Item PINK_GARNET_BOW = registerItem("pink_garnet_bow",
             new BowItem(new FabricItemSettings().maxDamage(500)));
     public static final Item PINK_GARNET_SHIELD = registerItem("pink_garnet_shield",

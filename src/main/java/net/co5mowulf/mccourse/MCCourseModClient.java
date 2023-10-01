@@ -3,6 +3,8 @@ package net.co5mowulf.mccourse;
 import net.co5mowulf.mccourse.block.entity.ModBlockEntities;
 import net.co5mowulf.mccourse.block.entity.renderer.GemEmpoweringBlockEntityRenderer;
 import net.co5mowulf.mccourse.entity.ModEntities;
+import net.co5mowulf.mccourse.entity.client.MagicProjectileModel;
+import net.co5mowulf.mccourse.entity.client.MagicProjectileRenderer;
 import net.co5mowulf.mccourse.entity.client.PorcupineModel;
 import net.co5mowulf.mccourse.entity.client.PorcupineRenderer;
 import net.co5mowulf.mccourse.entity.layer.ModModelLayers;
@@ -73,7 +75,9 @@ public class MCCourseModClient implements ClientModInitializer {
         TexturedRenderLayers.SIGN_TYPE_TEXTURES.put(ModWoodTypes.DRIFTWOOD, TexturedRenderLayers.getSignTextureId(ModWoodTypes.DRIFTWOOD));
 
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.PORCUPINE, PorcupineModel::getTexturedModelData);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.MAGIC_PROJECTILE, MagicProjectileModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.PORCUPINE, PorcupineRenderer::new);
         EntityRendererRegistry.register(ModEntities.THROWN_DICE_PROJECTILE, FlyingItemEntityRenderer::new);
+        EntityRendererRegistry.register(ModEntities.MAGIC_PROJECTILE, MagicProjectileRenderer::new);
     }
 }
