@@ -101,7 +101,7 @@ public class ModBlocks {
     public static final Block DRIFTWOOD_LEAVES = registerBlock("driftwood_leaves",
             new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
     public static final Block DRIFTWOOD_SAPLING = registerBlock("driftwood_sapling",
-            new SaplingBlock(new DriftwoodSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+            new ModSaplingBlock(new DriftwoodSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
     public static final Block POTTED_DRIFTWOOD_SAPLING = registerBlockWithoutBlockItem("potted_driftwood_sapling",
             new FlowerPotBlock(DRIFTWOOD_SAPLING, FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING).nonOpaque()));
     public static final Block DRIFTWOOD_PLANKS = registerBlock("driftwood_planks",
