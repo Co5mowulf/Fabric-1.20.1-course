@@ -26,6 +26,9 @@
 		],
 		"rei_client": [
 			"net.co5mowulf.mccourse.compat.MCCourseModREIClientPlugin"
+		],
+		"terrablender": [
+			"net.co5mowulf.mccourse.world.biome.ModTerraBlenderAPI"
 		]
 	},
 	"mixins": [
