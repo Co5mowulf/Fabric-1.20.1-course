@@ -6,10 +6,12 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.co5mowulf.mccourse.block.ModBlocks;
 import net.co5mowulf.mccourse.item.ModItems;
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.CropBlock;
 import net.minecraft.block.MushroomBlock;
 import net.minecraft.item.Items;
+import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.loot.condition.LootCondition;
 import net.minecraft.predicate.StatePredicate;
@@ -46,7 +48,7 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.GLOW_MOSS_BLOCK);
         addDrop(ModBlocks.GLOW_MOSS_CARPET);
         addDrop(ModBlocks.ORANGE_GLOW_MUSHROOM);
-        dropsWithShears(ModBlocks.GLOW_SPROUTS);
+        addDrop(ModBlocks.GLOW_SPROUTS, dropsWithShears(ModBlocks.GLOW_SPROUTS));
         addDrop(ModBlocks.DRIFTWOOD_SAPLING);
 
         addDrop(ModBlocks.DRIFTWOOD_SIGN, ModItems.DRIFTWOOD_SIGN);

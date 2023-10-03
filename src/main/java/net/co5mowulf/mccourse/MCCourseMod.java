@@ -1,5 +1,6 @@
 package net.co5mowulf.mccourse;
 
+import net.co5mowulf.mccourse.entity.ModBoats;
 import net.co5mowulf.mccourse.entity.ModEntities;
 import net.co5mowulf.mccourse.recipe.ModRecipes;
 import net.co5mowulf.mccourse.world.gen.ModWorldGeneration;
@@ -60,5 +61,7 @@ public class MCCourseMod implements ModInitializer {
 		ModEntities.registerModEntities();
 		ModTrunkPlacerTypes.register();
 		ModFoliagePlacerTypes.register();
+
+		ModBoats.registerBoats();
 	}
 }

@@ -1,5 +1,8 @@
 package net.co5mowulf.mccourse.item;
 
+import com.terraformersmc.terraform.boat.api.item.TerraformBoatItemHelper;
+import com.terraformersmc.terraform.boat.impl.item.TerraformBoatItem;
+import net.co5mowulf.mccourse.entity.ModBoats;
 import net.co5mowulf.mccourse.entity.ModEntities;
 import net.co5mowulf.mccourse.item.custom.*;
 import net.co5mowulf.mccourse.sound.ModSounds;
@@ -30,6 +33,13 @@ public class ModItems {
             new DataTabletItem(new FabricItemSettings().maxCount(1)));
     public static final Item DICE = registerItem("dice",
             new DiceItem(new FabricItemSettings().maxCount(1)));
+
+    public static final Item DRIFTWOOD_BOAT = TerraformBoatItemHelper.registerBoatItem
+            (ModBoats.DRIFTWOOD_BOAT_ID, ModBoats.DRIFTWOOD_BOAT_KEY, false);
+
+    public static final Item DRIFTWOOD_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem
+            (ModBoats.DRIFTWOOD_CHEST_BOAT_ID, ModBoats.DRIFTWOOD_BOAT_KEY, true);
+
     public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc",
             new MusicDiscItem(9, ModSounds.BAR_BRAWL, new FabricItemSettings().maxCount(1), 122));
     public static final Item RADIATION_STAFF = registerItem("radiation_staff",

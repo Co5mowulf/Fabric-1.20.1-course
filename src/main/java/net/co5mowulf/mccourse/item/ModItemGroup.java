@@ -82,6 +82,8 @@ public class ModItemGroup {
                         entries.add(ModBlocks.DRIFTWOOD_FENCE_GATE);
                         entries.add(ModItems.DRIFTWOOD_SIGN);
                         entries.add(ModItems.DRIFTWOOD_HANGING_SIGN);
+                        entries.add(ModItems.DRIFTWOOD_BOAT);
+                        entries.add(ModItems.DRIFTWOOD_CHEST_BOAT);
 
                         entries.add(ModBlocks.PETUNIA);
                         entries.add(ModBlocks.GLOW_MOSS_BLOCK);

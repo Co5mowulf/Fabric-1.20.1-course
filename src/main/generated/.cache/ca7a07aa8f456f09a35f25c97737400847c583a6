@@ -1,4 +1,4 @@
-// 1.20.1	2023-10-01T00:22:21.0165021	MC Course Mod/Model Definitions
+// 1.20.1	2023-10-02T21:38:32.5857253	MC Course Mod/Model Definitions
 2afc0d8ff001d06b04710b19590fcf2e60e3cbb7 assets\mccourse\models\item\pink_garnet_helmet_diamond_trim.json
 f7cfe32a7c4fbf4152511eb87c606d6a21cea79f assets\mccourse\models\item\pink_garnet_chestplate_redstone_trim.json
 615fc22198dc1e7267d2506778618863d3609259 assets\mccourse\models\block\pink_garnet_ore.json
@@ -146,8 +146,8 @@ f909f0e26580940619fb0e69c50d97eb34e42931 assets\mccourse\models\item\pink_garnet
 cf3bc4a2eb9b4af5e8a8e7288e9b13238a631610 assets\mccourse\models\item\end_stone_pink_garnet_ore.json
 711c17655647c322b774c36c177f8fa6541501e5 assets\mccourse\models\item\pink_garnet_slab.json
 fc22d00fadd53a8cd9d9fef1344249eb849a7a6a assets\mccourse\blockstates\sound_block.json
-be87fa32716f624e6ae8acca8f383a54b59c2c65 assets\mccourse\blockstates\cauliflower_crop.json
 8f910be322641fff040bd4be2fbf16da64257540 assets\mccourse\blockstates\driftwood_stairs.json
+be87fa32716f624e6ae8acca8f383a54b59c2c65 assets\mccourse\blockstates\cauliflower_crop.json
 03776dc6cb4d91593ef73c164fa170a169e4ce68 assets\mccourse\models\item\pink_garnet_trapdoor.json
 dffd8f34420653012700c3054a8598ea31e7cb29 assets\mccourse\models\item\pink_garnet_lamp_block.json
 3420912928dcb673e5b8570d04ed84d898df1824 assets\mccourse\models\block\driftwood_fence_inventory.json
@@ -171,6 +171,7 @@ c8d0ba087310e48632cbfb412f483dc681719f85 assets\mccourse\models\block\cauliflowe
 651b84eaccec0b3f839f34a309f6344b516ae7d7 assets\mccourse\models\block\driftwood_wood.json
 d40257fb6b951185ac67b3429e4f1d6c7f170bae assets\mccourse\models\item\pink_garnet_helmet_copper_trim.json
 acd908598229821c1b71825766e94b516cc9dc1b assets\mccourse\models\item\raw_pink_garnet.json
+dcaf26ba6015ed1debc4e6d8baa75705341a6fc4 assets\mccourse\models\item\driftwood_boat.json
 16e00e004273e5f490bb72e09866e14be4853971 assets\mccourse\models\block\pink_garnet_door_top_right.json
 5bc1af0fec2ea53f9b3746abccf2eec07e237cf2 assets\mccourse\models\item\orange_glow_mushroom_block.json
 91f909a0c7961ddaa33a81807ccb33cfb2a6d797 assets\mccourse\models\block\driftwood_button.json
@@ -207,6 +208,7 @@ b26c51f86a7754598cb95fd9a0f34484b35e41cd assets\mccourse\models\item\driftwood_b
 5fc01b105798c5056487c4b44bba90568d5fa394 assets\mccourse\models\item\driftwood_fence.json
 3b805be2c599cb8c32341b811651e8a256325b87 assets\mccourse\blockstates\driftwood_button.json
 5b8e9eadf708d0a4b0bd21f28288a18afa57ee03 assets\mccourse\models\item\glow_moss_block.json
+1ad72dbe4129aed4b9cf944dcaa5c20b3589aa12 assets\mccourse\models\item\driftwood_chest_boat.json
 c3d0cbbe579d17bff554f475f2e64ca723210157 assets\mccourse\models\block\orange_glow_mushroom.json
 9f91cf2304a6206a51c9ac3423890eb565a88c6a assets\mccourse\models\block\driftwood_fence_side.json
 9f8eacec70e3902becce4ed4106b882f837e2265 assets\mccourse\models\item\pink_garnet_ore.json

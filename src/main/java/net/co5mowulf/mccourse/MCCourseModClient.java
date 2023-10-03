@@ -1,7 +1,9 @@
 package net.co5mowulf.mccourse;
 
+import com.terraformersmc.terraform.boat.api.client.TerraformBoatClientHelper;
 import net.co5mowulf.mccourse.block.entity.ModBlockEntities;
 import net.co5mowulf.mccourse.block.entity.renderer.GemEmpoweringBlockEntityRenderer;
+import net.co5mowulf.mccourse.entity.ModBoats;
 import net.co5mowulf.mccourse.entity.ModEntities;
 import net.co5mowulf.mccourse.entity.client.MagicProjectileModel;
 import net.co5mowulf.mccourse.entity.client.MagicProjectileRenderer;
@@ -79,5 +81,7 @@ public class MCCourseModClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.PORCUPINE, PorcupineRenderer::new);
         EntityRendererRegistry.register(ModEntities.THROWN_DICE_PROJECTILE, FlyingItemEntityRenderer::new);
         EntityRendererRegistry.register(ModEntities.MAGIC_PROJECTILE, MagicProjectileRenderer::new);
+
+        TerraformBoatClientHelper.registerModelLayers(ModBoats.DRIFTWOOD_BOAT_ID, false);
     }
 }
