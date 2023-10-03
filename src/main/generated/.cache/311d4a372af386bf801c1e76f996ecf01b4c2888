@@ -1,12 +1,11 @@
-// 1.20.1	2023-10-03T12:47:42.8349211	MC Course Mod/World Gen
+// 1.20.1	2023-10-03T15:27:44.9571787	MC Course Mod/World Gen
 1a3bf47422a88a99214f18adf2207fa06606f8f2 data\mccourse\worldgen\configured_feature\end_pink_garnet_ore.json
-f1b3388d05b0299b7d8fe9304193544b5fbe8a49 data\mccourse\worldgen\biome\test_biome_2.json
 edf63ec47e1820a25bfb98a8de1686c9e4a95994 data\mccourse\worldgen\placed_feature\petunia_placed.json
 cf1c6886435d5f38cc8627d7985897bf11579619 data\mccourse\worldgen\configured_feature\petunia.json
-157340322d2d0de75999d1ae20fd06a4164705d5 data\mccourse\dimension_type\kaupendim_type.json
-5a9c061950014db977c876745719ce15a47fa909 data\mccourse\worldgen\configured_feature\driftwood.json
+d265072f6ffc27d9edc0b99dc2e3574778d3830c data\mccourse\dimension_type\kaupendim_type.json
+a7f9ffb82eb2644d766825eb01cdffdc21df3c15 data\mccourse\worldgen\configured_feature\driftwood.json
 1f3b992145770a23608eb686a945eaaa36cf5fbc data\mccourse\worldgen\configured_feature\glow_mushroom.json
-5b91053cbcb8162f289001e3574e1f29a753d000 data\mccourse\worldgen\biome\test_biome.json
+50d68dc9d943394f80003711bc746ec27b5e7258 data\mccourse\worldgen\biome\test_biome.json
 d51069845f87c984c4e2ba6f3f221f7e148f0bc9 data\mccourse\worldgen\placed_feature\pink_garnet_ore_placed.json
 3435666904f7ea6912c092ca1f3ab8370558327d data\mccourse\worldgen\configured_feature\pink_garnet_geode.json
 16c34e1e0f8811873f52e7b7f5cb58ee74b5c6f7 data\mccourse\worldgen\biome\glow_mushroom_biome.json

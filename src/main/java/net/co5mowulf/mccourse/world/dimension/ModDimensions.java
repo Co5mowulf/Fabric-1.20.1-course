@@ -25,18 +25,18 @@ public class ModDimensions {
     public static void bootstrapType(Registerable<DimensionType> context) {
         context.register(KAUPEN_DIM_TYPE, new DimensionType(
                 OptionalLong.of(12000), // fixedTime
-                false, // hasSkylight
-                false, // hasCeiling
+                true, // hasSkylight
+                true, // hasCeiling
                 false, // ultraWarm
                 true, // natural
                 1.0, // coordinateScale
-                true, // bedWorks
-                false, // respawnAnchorWorks
+                false, // bedWorks
+                true, // respawnAnchorWorks
                 0, // minY
                 256, // height
                 256, // logicalHeight
-                BlockTags.INFINIBURN_OVERWORLD, // infiniburn
-                DimensionTypes.OVERWORLD_ID, // effectsLocation
+                BlockTags.INFINIBURN_END, // infiniburn
+                DimensionTypes.THE_END_ID, // effectsLocation
                 1.0f, // ambientLight
                 new DimensionType.MonsterSettings(false, false, UniformIntProvider.create(0, 0), 0)));
     }
