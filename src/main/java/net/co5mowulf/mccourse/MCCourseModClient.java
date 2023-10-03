@@ -26,8 +26,11 @@ import net.co5mowulf.mccourse.particle.PinkGarnetParticle;
 import net.co5mowulf.mccourse.screen.GemEmpoweringScreen;
 import net.co5mowulf.mccourse.screen.ModScreenHandlers;
 import net.co5mowulf.mccourse.util.ModModelPredicateProvider;
+import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
+import net.minecraft.client.color.world.BiomeColors;
+import net.minecraft.client.color.world.FoliageColors;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.TexturedRenderLayers;
@@ -84,5 +87,9 @@ public class MCCourseModClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.MAGIC_PROJECTILE, MagicProjectileRenderer::new);
 
         TerraformBoatClientHelper.registerModelLayers(ModBoats.DRIFTWOOD_BOAT_ID, false);
+
+        ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> world != null && pos != null ? BiomeColors.getFoliageColor(world, pos)
+                : FoliageColors.getDefaultColor(), ModBlocks.COLOURED_LEAVES);
+        ColorProviderRegistry.ITEM.register((stack, tintIndex) -> FoliageColors.getDefaultColor(), ModBlocks.COLOURED_LEAVES);
     }
 }

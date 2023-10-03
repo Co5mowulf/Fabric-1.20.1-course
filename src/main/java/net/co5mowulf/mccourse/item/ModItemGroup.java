@@ -76,6 +76,7 @@ public class ModItemGroup {
                         entries.add(ModBlocks.DRIFTWOOD_PLANKS);
                         entries.add(ModBlocks.DRIFTWOOD_SAPLING);
                         entries.add(ModBlocks.DRIFTWOOD_LEAVES);
+                        entries.add(ModBlocks.COLOURED_LEAVES);
                         entries.add(ModBlocks.DRIFTWOOD_STAIRS);
                         entries.add(ModBlocks.DRIFTWOOD_SLAB);
                         entries.add(ModBlocks.DRIFTWOOD_BUTTON);

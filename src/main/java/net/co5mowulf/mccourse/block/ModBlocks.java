@@ -84,7 +84,6 @@ public class ModBlocks {
     //Plants
     public static final Block CAULIFLOWER_CROP = registerBlockWithoutBlockItem("cauliflower_crop",
             new CauliflowerCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT).nonOpaque()));
-
     public static final Block CATTAIL_CROP = registerBlockWithoutBlockItem("cattail_crop",
             new CattailCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT).nonOpaque()));
     public static final Block PETUNIA = registerBlock("petunia",
@@ -129,6 +128,9 @@ public class ModBlocks {
             new ModHangingSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_HANGING_SIGN), ModWoodTypes.DRIFTWOOD));
     public static final Block DRIFTWOOD_HANGING_WALL_SIGN = registerBlockWithoutBlockItem("driftwood_hanging_wall_sign",
             new ModWallHangingSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.DRIFTWOOD));
+    public static final Block COLOURED_LEAVES = registerBlock("coloured_leaves",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()));
+
 
     //Glow
     public static final Block GLOW_MOSS_BLOCK = registerBlock("glow_moss_block",
