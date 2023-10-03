@@ -9,8 +9,8 @@ import net.minecraft.world.gen.surfacebuilder.MaterialRules;
 public class ModMaterialRules {
     private static final MaterialRules.MaterialRule DIRT = makeStateRule(Blocks.DIRT);
     private static final MaterialRules.MaterialRule GRASS_BLOCK = makeStateRule(Blocks.GRASS_BLOCK);
-    private static final MaterialRules.MaterialRule PINK_GARNET = makeStateRule(ModBlocks.PINK_GARNET_BLOCK);
-    private static final MaterialRules.MaterialRule RAW_PINK_GARNET = makeStateRule(ModBlocks.RAW_PINK_GARNET_BLOCK);
+    private static final MaterialRules.MaterialRule STONE = makeStateRule(Blocks.STONE);
+    private static final MaterialRules.MaterialRule GRASS = makeStateRule(Blocks.GRASS_BLOCK);
 
     public static MaterialRules.MaterialRule makeRules() {
         MaterialRules.MaterialCondition isAtOrAboveWaterLevel = MaterialRules.water(-1, 0);
@@ -19,12 +19,12 @@ public class ModMaterialRules {
 
         return MaterialRules.sequence(
                 MaterialRules.sequence(MaterialRules.condition(MaterialRules.biome(ModBiomes.TEST_BIOME),
-                                MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, RAW_PINK_GARNET)),
-                        MaterialRules.condition(MaterialRules.STONE_DEPTH_CEILING, PINK_GARNET)),
+                                MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, GRASS)),
+                        MaterialRules.condition(MaterialRules.STONE_DEPTH_CEILING, STONE)),
 
                 MaterialRules.sequence(MaterialRules.condition(MaterialRules.biome(ModBiomes.TEST_BIOME_2),
-                                MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, RAW_PINK_GARNET)),
-                        MaterialRules.condition(MaterialRules.STONE_DEPTH_CEILING, PINK_GARNET)),
+                                MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, STONE)),
+                        MaterialRules.condition(MaterialRules.STONE_DEPTH_CEILING, STONE)),
 
 
                 // Default to a grass and dirt surface
