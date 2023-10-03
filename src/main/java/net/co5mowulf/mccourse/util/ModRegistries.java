@@ -1,5 +1,6 @@
 package net.co5mowulf.mccourse.util;
 
+import net.co5mowulf.mccourse.MCCourseMod;
 import net.co5mowulf.mccourse.block.ModBlocks;
 import net.co5mowulf.mccourse.command.ReturnHomeCommand;
 import net.co5mowulf.mccourse.command.SetHomeCommand;
@@ -19,12 +20,14 @@ import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.co5mowulf.mccourse.item.ModItems;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
+import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.ComposterBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.potion.Potions;
+import net.minecraft.util.Identifier;
 import net.minecraft.village.TradeOffer;
 import net.minecraft.village.VillagerProfession;
 
@@ -39,6 +42,17 @@ public class ModRegistries {
         registerFlammables();
         registerStrippables();
         registerAttributes();
+        createPortal();
+    }
+
+    private static void createPortal() {
+        CustomPortalBuilder.beginPortal()
+                .frameBlock(ModBlocks.PINK_GARNET_BLOCK)
+                .lightWithItem(ModItems.CATTAIL)
+                .destDimID(new Identifier(MCCourseMod.MOD_ID, "kaupendim"))
+                .tintColor(0xc76efa)
+                .flatPortal()
+                .registerPortal();
     }
 
     private static void registerFuels() {

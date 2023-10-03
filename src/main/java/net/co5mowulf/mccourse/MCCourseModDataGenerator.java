@@ -4,6 +4,7 @@ import net.co5mowulf.mccourse.datagen.ModWorldGenerator;
 import net.co5mowulf.mccourse.world.ModConfiguredFeatures;
 import net.co5mowulf.mccourse.world.ModPlacedFeatures;
 import net.co5mowulf.mccourse.world.biome.ModBiomes;
+import net.co5mowulf.mccourse.world.dimension.ModDimensions;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.co5mowulf.mccourse.datagen.*;
@@ -32,5 +33,6 @@ public class MCCourseModDataGenerator implements DataGeneratorEntrypoint {
 		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.BIOME, ModBiomes::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.DIMENSION_TYPE, ModDimensions::bootstrapType);
 	}
 }
