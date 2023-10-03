@@ -1,6 +1,7 @@
 package net.co5mowulf.mccourse.datagen;
 
 import dev.architectury.platform.Mod;
+import net.co5mowulf.mccourse.block.custom.CattailCropBlock;
 import net.co5mowulf.mccourse.block.custom.CauliflowerCropBlock;
 import net.co5mowulf.mccourse.block.custom.PinkGarnetLampBlock;
 import net.co5mowulf.mccourse.fluid.ModFluids;
@@ -84,6 +85,8 @@ public class ModModelProvider extends FabricModelProvider {
         Identifier identifier2 = blockStateModelGenerator.createSubModel(ModBlocks.PINK_GARNET_LAMP_BLOCK, "_on", Models.CUBE_ALL, TextureMap::all);
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.PINK_GARNET_LAMP_BLOCK)
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(PinkGarnetLampBlock.CLICKED, identifier2, identifier)));
+
+        blockStateModelGenerator.registerCrop(ModBlocks.CATTAIL_CROP, CattailCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7, 8);
     }
 
     @Override
@@ -108,6 +111,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PINK_GARNET_HORSE_ARMOR, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.CAULIFLOWER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CATTAIL, Models.GENERATED);
         itemModelGenerator.register(ModItems.PEAT_BRICK, Models.GENERATED);
         itemModelGenerator.register(ModItems.BAR_BRAWL_MUSIC_DISC, Models.GENERATED);
 

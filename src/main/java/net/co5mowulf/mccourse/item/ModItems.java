@@ -33,10 +33,8 @@ public class ModItems {
             new DataTabletItem(new FabricItemSettings().maxCount(1)));
     public static final Item DICE = registerItem("dice",
             new DiceItem(new FabricItemSettings().maxCount(1)));
-
     public static final Item DRIFTWOOD_BOAT = TerraformBoatItemHelper.registerBoatItem
             (ModBoats.DRIFTWOOD_BOAT_ID, ModBoats.DRIFTWOOD_BOAT_KEY, false);
-
     public static final Item DRIFTWOOD_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem
             (ModBoats.DRIFTWOOD_CHEST_BOAT_ID, ModBoats.DRIFTWOOD_BOAT_KEY, true);
 
@@ -62,6 +60,10 @@ public class ModItems {
             new Item(new FabricItemSettings().food(ModFoodComponents.CAULIFLOWER)));
     public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
             new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP, new FabricItemSettings()));
+    public static final Item CATTAIL_SEEDS = registerItem("cattail_seeds",
+            new AliasedBlockItem(ModBlocks.CATTAIL_CROP, new FabricItemSettings()));
+    public static final Item CATTAIL = registerItem("cattail",
+            new Item(new FabricItemSettings()));
 
     //Fuel Items
     public static final Item PEAT_BRICK = registerItem("peat_brick",

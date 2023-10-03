@@ -84,6 +84,9 @@ public class ModBlocks {
     //Plants
     public static final Block CAULIFLOWER_CROP = registerBlockWithoutBlockItem("cauliflower_crop",
             new CauliflowerCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT).nonOpaque()));
+
+    public static final Block CATTAIL_CROP = registerBlockWithoutBlockItem("cattail_crop",
+            new CattailCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT).nonOpaque()));
     public static final Block PETUNIA = registerBlock("petunia",
             new FlowerBlock(StatusEffects.BAD_OMEN, 4, FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque()));
     public static final Block POTTED_PETUNIA = registerBlockWithoutBlockItem("potted_petunia",

@@ -12,6 +12,7 @@ import net.minecraft.block.CropBlock;
 import net.minecraft.block.MushroomBlock;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootTable;
+import net.minecraft.loot.condition.AnyOfLootCondition;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.loot.condition.LootCondition;
 import net.minecraft.predicate.StatePredicate;
@@ -71,5 +72,11 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.CAULIFLOWER_CROP, this.cropDrops(ModBlocks.CAULIFLOWER_CROP,
                 ModItems.CAULIFLOWER, ModItems.CAULIFLOWER_SEEDS, builder2));
 
+        AnyOfLootCondition.Builder builder =
+                BlockStatePropertyLootCondition.builder(ModBlocks.CATTAIL_CROP).properties(StatePredicate.Builder.create()
+                                .exactMatch(CauliflowerCropBlock.AGE, 7))
+                        .or(BlockStatePropertyLootCondition.builder(ModBlocks.CATTAIL_CROP).properties(StatePredicate.Builder.create()
+                                .exactMatch(CauliflowerCropBlock.AGE, 8)));
+        addDrop(ModBlocks.CATTAIL_CROP, cropDrops(ModBlocks.CATTAIL_CROP, ModItems.CATTAIL, ModItems.CATTAIL_SEEDS, builder));
     }
 }

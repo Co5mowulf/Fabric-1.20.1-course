@@ -18,9 +18,11 @@ public class ModItemGroup {
                     .icon(() -> new ItemStack(ModItems.PINK_GARNET)).entries((displayContext, entries) -> {
                         entries.add(ModItems.PINK_GARNET);
                         entries.add(ModItems.RAW_PINK_GARNET);
-                        entries.add(ModItems.CAULIFLOWER);
-                        entries.add(ModItems.PEAT_BRICK);
                         entries.add(ModItems.CAULIFLOWER_SEEDS);
+                        entries.add(ModItems.CAULIFLOWER);
+                        entries.add(ModItems.CATTAIL_SEEDS);
+                        entries.add(ModItems.CATTAIL);
+                        entries.add(ModItems.PEAT_BRICK);
                         entries.add(ModItems.RADIATION_STAFF);
 
                         entries.add(ModItems.METAL_DETECTOR);

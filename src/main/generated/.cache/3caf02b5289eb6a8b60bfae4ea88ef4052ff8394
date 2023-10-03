@@ -1,4 +1,4 @@
-// 1.20.1	2023-10-02T21:38:32.6006062	MC Course Mod/Block Loot Tables
+// 1.20.1	2023-10-02T22:09:15.66804	MC Course Mod/Block Loot Tables
 7843a3c48f30392d6956f1b77aa59b291d769731 data\mccourse\loot_tables\blocks\pink_garnet_stairs.json
 2219c9e49518a68a9fe84c708a5afa3676cbf982 data\mccourse\loot_tables\blocks\sound_block.json
 db9b7ba7f4993f58e55b0b14b7b14e325f03d137 data\mccourse\loot_tables\blocks\pink_garnet_button.json
@@ -25,6 +25,7 @@ d99b5df52093b717682327159deb7365e9986450 data\mccourse\loot_tables\blocks\raw_pi
 889a5ee84c3e26c153eba897206947c442c99a0a data\mccourse\loot_tables\blocks\pink_garnet_ore.json
 e429a0b6656b263ab5cb1170b734c3efcfc0ae7c data\mccourse\loot_tables\blocks\driftwood_pressure_plate.json
 142ad9fe4ed1e88947043cb7c17f77494b2f2a27 data\mccourse\loot_tables\blocks\nether_pink_garnet_ore.json
+b8cdd15d403a1820499590999f323f3e67eb9269 data\mccourse\loot_tables\blocks\cattail_crop.json
 1596b2f7b9139ee7f423899999a5483e62b88058 data\mccourse\loot_tables\blocks\cauliflower_crop.json
 46fdee3a00255feaaab15d66546c8eb5ec7ca4a4 data\mccourse\loot_tables\blocks\glow_sprouts.json
 9a612def2988b3fe22a173b4eb9d1d7606ea2652 data\minecraft\loot_tables\blocks\oak_sign.json
